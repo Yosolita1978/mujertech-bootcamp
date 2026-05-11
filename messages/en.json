@@ -541,5 +541,28 @@
     "copyLink": "📋 COPY LINK",
     "copied": "✅ COPIED!",
     "continueAnyway": "Continue here anyway"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "We'll email you a magic link.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "submit": "Send link",
+      "submitting": "Sending...",
+      "checkEmailTitle": "Check your email 📬",
+      "checkEmailBody": "We sent a link to {email}. Open it on this device to sign in.",
+      "errors": {
+        "invalidEmail": "Invalid email. Please check the address.",
+        "rateLimited": "Too many attempts. Please wait a few minutes.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "callback": {
+      "errorTitle": "We couldn't sign you in",
+      "errorBody": "The link may have expired or already been used. Request a new one.",
+      "retry": "Back to sign in"
+    },
+    "signOut": "Sign out"
   }
 }

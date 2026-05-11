@@ -541,5 +541,28 @@
     "copyLink": "📋 COPIAR ENLACE",
     "copied": "✅ ¡COPIADO!",
     "continueAnyway": "Continuar aquí de todos modos"
+  },
+  "auth": {
+    "login": {
+      "title": "Inicia sesión",
+      "subtitle": "Te enviaremos un enlace mágico a tu correo.",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "submit": "Enviar enlace",
+      "submitting": "Enviando...",
+      "checkEmailTitle": "Revisa tu correo 📬",
+      "checkEmailBody": "Te enviamos un enlace a {email}. Ábrelo en este dispositivo para iniciar sesión.",
+      "errors": {
+        "invalidEmail": "Correo no válido. Revisa la dirección.",
+        "rateLimited": "Demasiados intentos. Espera unos minutos.",
+        "generic": "Algo salió mal. Intenta de nuevo."
+      }
+    },
+    "callback": {
+      "errorTitle": "No pudimos iniciar tu sesión",
+      "errorBody": "El enlace puede haber caducado o ya se usó. Solicita uno nuevo.",
+      "retry": "Volver al inicio de sesión"
+    },
+    "signOut": "Cerrar sesión"
   }
 }

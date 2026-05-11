@@ -3,14 +3,17 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher';
+import { signOutAction } from '@/app/actions/auth';
 import styles from './Header.module.css';
 
 type Props = {
   onGlossaryOpen: () => void;
+  userEmail: string | null;
 };
 
-export default function Header({ onGlossaryOpen }: Props) {
+export default function Header({ onGlossaryOpen, userEmail }: Props) {
   const t = useTranslations('header');
+  const tAuth = useTranslations('auth');
 
   return (
     <header className={styles.header}>
@@ -36,6 +39,13 @@ export default function Header({ onGlossaryOpen }: Props) {
             <span className={styles.glossaryIcon}>📖</span>
             <span>{t('help')}</span>
           </button>
+          {userEmail && (
+            <form action={signOutAction}>
+              <button className={styles.signOutBtn} type="submit">
+                {tAuth('signOut')}
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </header>
