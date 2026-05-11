@@ -1,0 +1,40 @@
+.switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.langBtn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.langBtn:active {
+    color: white;
+}
+
+.langBtn.active {
+    color: white;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+}
+
+@media (min-width: 1024px) {
+    .langBtn:hover {
+        color: white;
+    }
+}

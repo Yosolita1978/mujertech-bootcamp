@@ -2,5 +2,544 @@
   "Home": {
     "title": "Bootcamp",
     "description": "Plataforma de aprendizaje"
+  },
+  "common": {
+    "next": "SIGUIENTE",
+    "previous": "ANTERIOR",
+    "copy": "COPIAR",
+    "close": "Cerrar",
+    "loading": "Cargando..."
+  },
+  "header": {
+    "title": "MujerTech",
+    "help": "Ayuda"
+  },
+  "nav": {
+    "welcome": "Inicio",
+    "module1": "IA",
+    "module2": "Prompts",
+    "module3": "Módulo 3"
+  },
+  "progress": {
+    "blockOf": "Bloque {current} de {total}",
+    "modules": {
+      "module1": "Qué es la IA",
+      "module2": "Prompts y Herramientas",
+      "module3": "Módulo 3",
+      "capstone": "Nuevo Módulo"
+    }
+  },
+  "glossary": {
+    "title": "📖 Palabras que usamos",
+    "searchPlaceholder": "Buscar palabra...",
+    "empty": "No se encontraron palabras",
+    "terms": {
+      "app": {
+        "term": "App",
+        "definition": "Un programa que vive en tu celular. Ejemplo: WhatsApp es una app."
+      },
+      "boton": {
+        "term": "Botón",
+        "definition": "Un cuadro en la pantalla que hace algo cuando lo tocas."
+      },
+      "chatgpt": {
+        "term": "ChatGPT",
+        "definition": "Una app de inteligencia artificial que te ayuda a escribir textos. Es gratis."
+      },
+      "canva": {
+        "term": "Canva",
+        "definition": "Una app para crear imágenes y diseños bonitos. Tiene versión gratis."
+      },
+      "copiar": {
+        "term": "Copiar",
+        "definition": "Guardar un texto para usarlo en otro lugar. Tocas y mantienes, luego eliges \"Copiar\"."
+      },
+      "descargar": {
+        "term": "Descargar",
+        "definition": "Guardar algo de internet en tu celular."
+      },
+      "ia": {
+        "term": "IA",
+        "definition": "Inteligencia Artificial. Programas de computadora muy inteligentes que pueden crear textos, imágenes y más."
+      },
+      "imagenGenerada": {
+        "term": "Imagen generada",
+        "definition": "Una imagen creada por la IA, no es una foto real tomada con cámara."
+      },
+      "internet": {
+        "term": "Internet",
+        "definition": "La red que conecta computadoras y celulares en todo el mundo. Necesitas internet para usar ChatGPT y Canva."
+      },
+      "pegar": {
+        "term": "Pegar",
+        "definition": "Poner el texto que copiaste en un lugar nuevo. Tocas y mantienes donde quieres pegar."
+      },
+      "prompt": {
+        "term": "Prompt",
+        "definition": "El mensaje que le escribes a la IA para pedirle algo. Como cuando le pides algo a alguien por WhatsApp."
+      },
+      "redesSociales": {
+        "term": "Redes sociales",
+        "definition": "Apps donde compartes fotos y mensajes con otras personas. Ejemplo: WhatsApp, Instagram, Facebook."
+      },
+      "tono": {
+        "term": "Tono",
+        "definition": "La forma en que \"suena\" un texto. Puede ser amigable, profesional, divertido, etc."
+      }
+    }
+  },
+  "notifications": {
+    "skipPresession": "¡Perfecto! Vamos directo al taller",
+    "presessionComplete": "¡Muy bien! Ya estás lista para el taller 🎉",
+    "jumpModule": "¡Vamos allá! 🚀",
+    "experience": {
+      "nunca": "¡Perfecto! Este taller está hecho para ti. Vamos paso a paso.",
+      "poco": "Muy bien, hoy vas a pasar de la teoría a la práctica.",
+      "algo": "Genial, vas a aprender trucos para mejorar tus resultados.",
+      "mucho": "¡Excelente! Descubrirás nuevas formas de usar la IA."
+    },
+    "shareSuccess": "¡Gracias por compartir! 💚",
+    "copied": "¡Copiado! 📋",
+    "copyFailed": "No se pudo copiar. Selecciona el texto manualmente.",
+    "promptReady": "¡Tu mensaje está listo! 🎉",
+    "fillBusiness": "Por favor escribe qué vendes o haces",
+    "fillNeed": "Por favor elige qué necesitas",
+    "fillTone": "Por favor elige un tono",
+    "confidenceRated": "¡Gracias por tu respuesta! 🎉",
+    "emailRequired": "Por favor escribe tu correo",
+    "emailInvalid": "Por favor escribe un correo válido",
+    "emailSuccess": "¡Gracias! Te avisaremos pronto 💌",
+    "emailError": "Hubo un error. Intenta de nuevo.",
+    "nameRequired": "Por favor escribe tu nombre",
+    "certificateGenerating": "Generando tu certificado... ⏳",
+    "certificateDownloaded": "¡Certificado descargado! 🎉"
+  },
+  "module1": {
+    "title": "¿Qué es la Inteligencia Artificial?",
+    "subtitle": "Explicado de forma simple",
+    "duration": "⏱️ 10 minutos",
+    "outcomes": {
+      "item1": "Explicar qué es la IA en tus propias palabras",
+      "item2": "Saber qué puede y qué NO puede hacer la IA"
+    },
+    "completion": "Ahora entiendes qué es la IA y cómo puede ayudarte en tu negocio.",
+    "explanation": {
+      "title": "La IA es como una asistente muy inteligente",
+      "text": "Imagina que tienes una asistente que:",
+      "item1": "📚 Leyó millones de libros",
+      "item2": "🖼️ Vio millones de imágenes",
+      "item3": "💬 Aprendió a escribir muy bien",
+      "conclusion": "Esa es la IA. <strong>Le puedes pedir ayuda y te responde.</strong>"
+    },
+    "canDo": {
+      "title": "Lo que SÍ puede hacer la IA",
+      "item1": "Escribir textos para tus redes sociales",
+      "item2": "Darte ideas para tu negocio",
+      "item3": "Crear imágenes bonitas",
+      "item4": "Ayudarte a escribir mensajes"
+    },
+    "cannotDo": {
+      "title": "Lo que NO puede hacer la IA",
+      "item1": {
+        "title": "No piensa de verdad.",
+        "description": "Solo imita lo que aprendió."
+      },
+      "item2": {
+        "title": "No siempre tiene razón.",
+        "description": "Puede equivocarse."
+      },
+      "item3": {
+        "title": "No reemplaza tu criterio.",
+        "description": "Tú decides qué usar."
+      }
+    },
+    "quiz": {
+      "title": "Actividad: ¿Verdad o Mentira?",
+      "instruction": "Vamos a ver si entendiste. Responde cada pregunta:",
+      "question1": "\"La IA puede pensar por sí misma\"",
+      "question2": "\"La IA puede ayudarme a escribir textos\"",
+      "question3": "\"La IA siempre dice la verdad\"",
+      "truth": "🟢 VERDAD",
+      "lie": "🔴 MENTIRA",
+      "correct": "¡Correcto!",
+      "explanation1": "La IA no piensa de verdad. Solo imita patrones que aprendió.",
+      "explanation2": "Sí puede ayudarte a escribir, es una de sus mejores funciones.",
+      "explanation3": "La IA puede equivocarse. Siempre debes revisar lo que te da."
+    },
+    "ethics": {
+      "title": "Momento de reflexión",
+      "text": "La IA aprende de datos que los humanos creamos. Si esos datos tienen errores o prejuicios, la IA también los tendrá.",
+      "question": "¿Cómo crees que esto podría afectar a tu negocio?",
+      "shareButton": "COMPARTIR EN EL GRUPO",
+      "shareText": "¿Cómo crees que los errores de la IA podrían afectar a un negocio pequeño? 🤔"
+    },
+    "successCriteria": {
+      "introTitle": "Al terminar este módulo podrás:",
+      "completionTitle": "¡Lo lograste!"
+    }
+  },
+  "module2": {
+    "title": "Cómo hablarle a la IA",
+    "subtitle": "Aprende a pedir lo que necesitas",
+    "duration": "⏱️ 15 minutos",
+    "outcomes": {
+      "item1": "Escribir un mensaje claro a la IA para que te ayude",
+      "item2": "Conocer las herramientas gratuitas que puedes usar hoy"
+    },
+    "completion": "Ahora sabes cómo hablarle a la IA para obtener buenos resultados.",
+    "whatIsPrompt": {
+      "title": "¿Qué es un \"prompt\"?",
+      "text1": "Un <strong>prompt</strong> es el mensaje que le escribes a la IA.",
+      "text2": "Es como cuando le pides algo a alguien por WhatsApp.",
+      "exampleLabel": "Ejemplo de prompt:",
+      "exampleText": "\"Dame 3 ideas para publicar en Instagram sobre mi negocio de jabones\""
+    },
+    "goldenRule": {
+      "title": "La regla de oro",
+      "text": "Entre más claro le pidas las cosas a la IA, mejor te va a ayudar.",
+      "bad": "Malo:",
+      "badExample": "\"Dame ideas\"",
+      "good": "Bueno:",
+      "goodExample": "\"Dame 3 ideas de posts para Instagram sobre jabones naturales, con un tono amigable\""
+    },
+    "method": {
+      "title": "El método de los 4 pasos",
+      "intro": "Para escribir un buen mensaje a la IA, sigue estos pasos:",
+      "step1": {
+        "title": "¿Quién eres?",
+        "description": "Cuéntale sobre ti y tu negocio",
+        "example": "\"Tengo un negocio de jabones naturales\""
+      },
+      "step2": {
+        "title": "¿Qué necesitas?",
+        "description": "Dile exactamente qué quieres",
+        "example": "\"Necesito 3 textos para WhatsApp\""
+      },
+      "step3": {
+        "title": "¿Cómo lo quieres?",
+        "description": "Describe cómo debe verse el resultado",
+        "example": "\"Cortos, con emojis\""
+      },
+      "step4": {
+        "title": "¿Qué tono?",
+        "description": "¿Formal, amigable, divertido?",
+        "example": "\"Tono amigable y cercano\""
+      }
+    },
+    "maria": {
+      "title": "Ejemplo Completo: María y sus Jabones",
+      "subtitle": "Veamos cómo María usa la IA para su negocio",
+      "step1": {
+        "title": "Conoce a María",
+        "text1": "María vende <strong>jabones artesanales</strong> en Bogotá.",
+        "text2": "Su negocio se llama <strong>\"Jabones de la Abuela\"</strong>.",
+        "text3": "Vende por WhatsApp y en ferias locales.",
+        "problem": "😰 <strong>Su problema:</strong> No sabe qué publicar en su estado de WhatsApp."
+      },
+      "step2": {
+        "title": "María piensa qué necesita",
+        "what": "<strong>¿Qué vende?</strong> → Jabones naturales",
+        "need": "<strong>¿Qué necesita?</strong> → Textos para WhatsApp",
+        "how": "<strong>¿Cómo lo quiere?</strong> → Cortos con emojis",
+        "tone": "<strong>¿Qué tono?</strong> → Amigable"
+      },
+      "step3": {
+        "title": "María escribe su mensaje a la IA",
+        "label": "El mensaje completo:",
+        "copyButton": "📋 COPIAR ESTE MENSAJE"
+      },
+      "step4": {
+        "title": "La IA le responde",
+        "label": "🤖 La IA le dio estas opciones:",
+        "option1Label": "🧼✨ <strong>Opción 1:</strong>",
+        "option1Text": "\"¿Ya probaste nuestros jabones de avena? Tu piel te lo va a agradecer 🥰 ¡Escríbeme!\"",
+        "option2Label": "🌿🧴 <strong>Opción 2:</strong>",
+        "option2Text": "\"Ingredientes naturales + mucho amor = jabones que cuidan tu piel 💚 ¿Te cuento más?\"",
+        "option3Label": "🎁 <strong>Opción 3:</strong>",
+        "option3Text": "\"Regalito perfecto para alguien especial: jabón artesanal hecho con cariño 💝 ¡Pregúntame!\""
+      },
+      "result": {
+        "title": "¡María ya tiene contenido para publicar!",
+        "time": "⏱️ 5 min",
+        "timeLabel": "Tiempo total",
+        "alone": "🙋‍♀️ Sola",
+        "aloneLabel": "Lo hizo ella misma",
+        "options": "📝 3",
+        "optionsLabel": "Opciones",
+        "note": "Antes, María no sabía qué escribir. ¡Ahora tiene varias opciones para elegir!"
+      },
+      "prompt": "Soy María, tengo un negocio de jabones artesanales naturales en Bogotá.\n\nNecesito 3 textos cortos para publicar en mi estado de WhatsApp.\n\nQue sean cortos, con emojis, y que inviten a preguntar por WhatsApp.\n\nUsa un tono amigable y cercano, como si le hablara a una amiga."
+    },
+    "yourTurn": {
+      "title": "¡Ahora es tu turno!",
+      "intro": "Vamos a crear tu primer mensaje para la IA:",
+      "step1Label": "¿Qué vendes o haces?",
+      "step1Placeholder": "Ejemplo: galletas caseras, ropa, servicios de limpieza...",
+      "step2Label": "¿Qué necesitas? (elige una)",
+      "step3Label": "¿Qué tono quieres? (elige uno)",
+      "generateButton": "✨ CREAR MI MENSAJE",
+      "resultLabel": "Tu mensaje para la IA:",
+      "copyButton": "📋 COPIAR MI MENSAJE",
+      "nextStepHint": "💡 <strong>Siguiente paso:</strong> Copia este mensaje y pégalo en ChatGPT o Claude para ver qué te responde la IA.",
+      "needs": {
+        "social": "Ideas para redes sociales",
+        "message": "Un mensaje para clientes",
+        "names": "Nombres para un producto"
+      },
+      "tones": {
+        "friendly": "Amigable",
+        "professional": "Profesional",
+        "fun": "Divertido"
+      }
+    },
+    "tools": {
+      "dividerTitle": "Herramientas que puedes usar HOY",
+      "dividerSubtitle": "Conoce las apps de IA más fáciles",
+      "chatgpt": {
+        "title": "ChatGPT",
+        "price": "GRATIS",
+        "what": "<strong>¿Qué es?</strong> Una IA que conversa contigo y te ayuda a escribir.",
+        "forWhat": "<strong>¿Para qué sirve?</strong>",
+        "use1": "✍️ Escribir textos para redes sociales",
+        "use2": "💡 Darte ideas para tu negocio",
+        "use3": "📧 Redactar mensajes y correos",
+        "use4": "❓ Responder preguntas",
+        "howTo": "<strong>¿Cómo usarlo?</strong>",
+        "step1": "Entra a <strong><link>chatgpt.com</link></strong> en tu celular",
+        "step2": "Crea una cuenta gratis (con tu correo)",
+        "step3": "Escribe tu mensaje y envíalo"
+      },
+      "canva": {
+        "title": "Canva",
+        "price": "GRATIS (con opciones de pago)",
+        "what": "<strong>¿Qué es?</strong> Una app para crear diseños e imágenes bonitas.",
+        "forWhat": "<strong>¿Para qué sirve?</strong>",
+        "use1": "🖼️ Crear imágenes para redes sociales",
+        "use2": "📋 Hacer menús y catálogos",
+        "use3": "🎨 Diseñar logos simples",
+        "use4": "✨ Generar imágenes con IA",
+        "howTo": "<strong>¿Cómo usarlo?</strong>",
+        "step1": "Entra a <strong><link>canva.com</link></strong> o descarga la app de tu tienda",
+        "step2": "Crea una cuenta gratis",
+        "step3": "Elige una plantilla y personalízala"
+      },
+      "tip": {
+        "title": "Tip importante",
+        "text": "Empieza con <strong>ChatGPT</strong> para textos y <strong>Canva</strong> para imágenes. Son gratis y fáciles de usar. ¡No necesitas más por ahora!"
+      }
+    },
+    "ethics": {
+      "title": "Momento de reflexión",
+      "text": "Cuando le das información a la IA, esos datos pueden ser usados para entrenar nuevos modelos. Por eso es importante no compartir información sensible de tu negocio o clientes.",
+      "question": "¿Qué información de tu negocio NO le darías a la IA?",
+      "shareButton": "COMPARTIR EN EL GRUPO",
+      "shareText": "¿Qué información de tu negocio NO le darías a la IA? 🔒"
+    }
+  },
+  "module3": {
+    "title": "Módulo 3"
+  },
+  "capstone": {
+    "backButton": "VOLVER AL TALLER",
+    "stepOf": "Paso {current} de {total}",
+    "nextStep": "SIGUIENTE",
+    "prevStep": "ANTERIOR",
+    "step0": {
+      "title": "Escritura de Prompts para Mujeres Emprendedoras",
+      "subtitle": "Aprende a pedirle a la IA exactamente lo que necesitas para tu negocio",
+      "duration": "15-20 minutos",
+      "welcome1": "Escribir buenos prompts (instrucciones para la IA) es una habilidad que cualquiera puede practicar.",
+      "welcome2": "No necesitas ser técnica ni experta. Solo necesitas saber qué quieres y cómo pedirlo.",
+      "welcome3": "En esta lección vas a aprender un método simple para hablarle a la IA y obtener respuestas útiles para tu negocio.",
+      "encouragement": "Si puedes escribir un mensaje de WhatsApp, puedes escribir un buen prompt."
+    },
+    "step1": {
+      "title": "Lo que vas a aprender",
+      "objective1": "Puedo reconocer qué hace que un prompt sea efectivo",
+      "objective2": "Puedo escribir un prompt claro para una tarea de mi negocio",
+      "objective3": "Puedo revisar lo que me da la IA y mejorar mi prompt si es necesario",
+      "note": "No hay respuestas incorrectas aquí. Esto es práctica, y cada intento te hace mejor."
+    },
+    "step2": {
+      "title": "¿Por qué importan los prompts?",
+      "text1": "La IA no lee tu mente. Solo puede trabajar con lo que tú le das.",
+      "rule": "Prompt vago = respuesta vaga. Prompt claro = respuesta más útil.",
+      "example1Label": "Prompt vago:",
+      "example1": "Dame ideas de marketing.",
+      "example1Result": "La IA te da ideas genéricas que no sirven para tu negocio específico.",
+      "example2Label": "Prompt claro:",
+      "example2": "Tengo un negocio de velas artesanales para mamás ocupadas. Dame 5 ideas de publicaciones para Instagram para promociones de primavera en un tono amigable y motivador.",
+      "example2Result": "La IA te da ideas específicas para TU negocio, TU audiencia, y TU estilo.",
+      "takeaway": "La diferencia no es magia — es claridad. Y eso es exactamente lo que vas a aprender."
+    },
+    "step3": {
+      "title": "El Método CTO: Tu Fórmula para Buenos Prompts",
+      "intro": "CTO son tres cosas simples que incluyes en cada prompt:",
+      "context": {
+        "letter": "C",
+        "title": "Contexto",
+        "description": "Lo que la IA necesita saber sobre ti y tu situación",
+        "example": "\"Tengo una panadería pequeña en mi barrio. Vendo por WhatsApp y en persona.\""
+      },
+      "task": {
+        "letter": "T",
+        "title": "Tarea",
+        "description": "Lo que quieres que la IA haga por ti",
+        "example": "\"Necesito 3 mensajes para invitar a mis clientes a probar mi nuevo pan de yuca.\""
+      },
+      "output": {
+        "letter": "O",
+        "title": "Output",
+        "description": "Cómo quieres que sea la respuesta",
+        "example": "\"Que sean cortos (máximo 2 líneas), con emojis, en un tono cálido y cercano.\""
+      },
+      "tip": "No tienes que memorizar esto. Con la práctica, se vuelve natural."
+    },
+    "step4": {
+      "title": "Prompt Débil vs. Prompt Fuerte",
+      "intro": "Veamos ejemplos reales lado a lado:",
+      "example1": {
+        "weakLabel": "Prompt débil:",
+        "weak": "Escríbeme algo para vender mis productos.",
+        "strongLabel": "Prompt fuerte:",
+        "strong": "Tengo un negocio de jabones artesanales naturales. Escríbeme 3 textos cortos para mi estado de WhatsApp que inviten a mis clientes a comprar jabones como regalo de cumpleaños. Usa un tono amigable y con emojis.",
+        "whyTitle": "¿Por qué funciona mejor?",
+        "why1": "Dice qué tipo de negocio es (contexto)",
+        "why2": "Dice exactamente qué necesita (tarea)",
+        "why3": "Dice cómo quiere la respuesta (output)"
+      },
+      "example2": {
+        "weakLabel": "Prompt débil:",
+        "weak": "Dame nombres para mi negocio.",
+        "strongLabel": "Prompt fuerte:",
+        "strong": "Estoy empezando un negocio de postres saludables para oficinas en la ciudad. Necesito 5 nombres creativos para mi marca. Que suenen frescos, modernos y fáciles de recordar.",
+        "whyTitle": "¿Por qué funciona mejor?",
+        "why1": "Explica el tipo de negocio y audiencia",
+        "why2": "Pide una cantidad específica",
+        "why3": "Describe el estilo deseado"
+      }
+    },
+    "step5": {
+      "title": "Ejemplo Guiado: De Débil a Fuerte",
+      "intro": "Vamos a ver cómo transformar un prompt paso a paso.",
+      "originalLabel": "Prompt original (débil):",
+      "original": "Dame ideas para mi negocio.",
+      "problem": "Este prompt es muy vago. La IA no sabe qué tipo de negocio tienes, qué necesitas, ni cómo quieres la respuesta.",
+      "transformTitle": "Transformación con el método CTO:",
+      "contextLabel": "Contexto:",
+      "contextText": "\"Tengo un negocio de limpieza del hogar. Atiendo familias en mi colonia.\"",
+      "taskLabel": "Tarea:",
+      "taskText": "\"Dame 5 ideas de publicaciones para Facebook para conseguir nuevos clientes.\"",
+      "outputLabel": "Output:",
+      "outputText": "\"Que sean amigables, con emojis, y que incluyan un llamado a la acción.\"",
+      "revisedLabel": "Prompt revisado (fuerte):",
+      "revised": "Tengo un negocio de limpieza del hogar. Atiendo familias en mi colonia.\n\nDame 5 ideas de publicaciones para Facebook para conseguir nuevos clientes.\n\nQue sean amigables, con emojis, y que incluyan un llamado a la acción.",
+      "sampleResponseLabel": "Ejemplo de respuesta de la IA:",
+      "sampleResponse1": "\"✨🏠 ¿Tu casa necesita un respiro? ¡Nosotras nos encargamos! Limpieza profunda con productos seguros para tu familia. Escríbenos hoy y recibe 10% de descuento en tu primera limpieza. 💚\"",
+      "sampleResponse2": "\"📸 Antes y después de una de nuestras limpiezas. ¿Quieres ver la diferencia en tu hogar? ¡Agenda tu cita! 🧹✨\"",
+      "reflectionTitle": "¿Qué mejoró?",
+      "reflection1": "La respuesta es específica para un negocio de limpieza",
+      "reflection2": "El tono es amigable, como se pidió",
+      "reflection3": "Incluye llamados a la acción",
+      "reflectionHuman": "Pero recuerda: tú decides si la respuesta funciona para TU negocio. La IA propone, tú decides."
+    },
+    "step6": {
+      "title": "Tu Turno: Escribe Tu Propio Prompt",
+      "intro": "Ahora es tu turno de practicar. Usa el método CTO para crear tu propio prompt.",
+      "contextLabel": "Contexto: ¿Qué hace tu negocio? ¿A quién le vendes?",
+      "contextPlaceholder": "Ejemplo: Tengo un negocio de galletas decoradas. Vendo para fiestas y eventos...",
+      "taskLabel": "Tarea: ¿Qué necesitas que la IA haga?",
+      "taskPlaceholder": "Ejemplo: Necesito 3 ideas de promociones para el Día de las Madres...",
+      "outputLabel": "Output: ¿Cómo quieres la respuesta?",
+      "outputPlaceholder": "Ejemplo: Que sean cortas, con emojis, en un tono alegre...",
+      "generateButton": "VER MI PROMPT COMPLETO",
+      "resultLabel": "Tu prompt usando el método CTO:",
+      "copyButton": "COPIAR MI PROMPT",
+      "hint": "Copia este prompt y pégalo en ChatGPT o Claude para ver qué te responde la IA.",
+      "fillAll": "Por favor completa los tres campos para generar tu prompt"
+    },
+    "step7": {
+      "title": "No Confíes Ciegamente en la IA",
+      "intro": "La IA es una herramienta muy útil, pero no es perfecta. Siempre debes revisar lo que te da.",
+      "question1Title": "¿Es preciso?",
+      "question1Text": "La IA puede inventar datos o dar información incorrecta. Verifica los hechos importantes.",
+      "question2Title": "¿Le sirve a mi audiencia?",
+      "question2Text": "Tú conoces a tus clientes mejor que la IA. ¿El contenido les hablaría a ellos?",
+      "question3Title": "¿Suena como mi marca?",
+      "question3Text": "Tu negocio tiene su propia voz. Si la respuesta no suena como tú, cámbiala.",
+      "question4Title": "¿Qué cambiaría?",
+      "question4Text": "Siempre pregúntate qué mejorarías. Editar la respuesta de la IA es parte del proceso.",
+      "summary": "La IA es tu asistente, no tu jefa. Tú tienes la última palabra."
+    },
+    "step8": {
+      "title": "Comprueba lo que Aprendiste",
+      "intro": "Responde estas preguntas rápidas. No te preocupes — no hay calificación.",
+      "q1": {
+        "question": "¿Cuáles son características de un buen prompt? (elige todas las correctas)",
+        "option1": "Es corto y vago para que la IA tenga libertad",
+        "option2": "Incluye contexto sobre tu negocio",
+        "option3": "Describe la tarea que quieres que haga",
+        "option4": "Explica cómo quieres la respuesta",
+        "correct": "option2,option3,option4",
+        "feedback_correct": "Exacto. Un buen prompt incluye contexto, tarea y cómo quieres la respuesta.",
+        "feedback_incorrect": "Un prompt vago da resultados vagos. Un buen prompt incluye contexto, tarea y formato de respuesta."
+      },
+      "q2": {
+        "question": "¿Cuál de estos es un prompt más fuerte?",
+        "option1": "\"Dame ideas para vender más\"",
+        "option2": "\"Tengo una tienda de ropa juvenil en Instagram. Dame 5 ideas de Reels cortos para promocionar mi nueva colección de verano. Que sean divertidos y con música trending.\"",
+        "correct": "option2",
+        "feedback_correct": "Correcto. El segundo prompt tiene contexto, tarea específica y describe el output deseado.",
+        "feedback_incorrect": "El segundo es más fuerte porque incluye contexto (tienda de ropa juvenil), tarea (5 ideas de Reels) y output (divertidos, con música trending)."
+      },
+      "q3": {
+        "question": "Después de recibir una respuesta de la IA, ¿qué deberías hacer?",
+        "option1": "Publicarla tal cual sin revisar",
+        "option2": "Revisarla, verificar que sea correcta y editarla según tu estilo",
+        "correct": "option2",
+        "feedback_correct": "Exacto. Siempre revisa, verifica y personaliza. La IA propone, tú decides.",
+        "feedback_incorrect": "La respuesta correcta es revisar y editar. Nunca publiques sin revisar primero."
+      },
+      "reflectionLabel": "Reflexión rápida:",
+      "reflectionQuestion": "¿Cuál es una cosa que cambiarías en cómo usas la IA después de esta lección?",
+      "reflectionPlaceholder": "Escribe tu reflexión aquí..."
+    },
+    "step9": {
+      "title": "Guía Rápida: El Método CTO",
+      "subtitle": "Guarda esto para usarlo después",
+      "formulaTitle": "La Fórmula",
+      "formulaC": "CONTEXTO — Cuéntale sobre ti y tu negocio",
+      "formulaT": "TAREA — Dile qué necesitas",
+      "formulaO": "OUTPUT — Describe cómo quieres la respuesta",
+      "tipsTitle": "Tips Rápidos",
+      "tip1": "Sé específica: mientras más detalles, mejor resultado",
+      "tip2": "Incluye tu audiencia: ¿a quién le vendes?",
+      "tip3": "Pide un tono: amigable, profesional, divertido...",
+      "tip4": "Pide una cantidad: \"dame 3 ideas\" es mejor que \"dame ideas\"",
+      "tip5": "Siempre revisa: la IA es tu asistente, no tu reemplazo",
+      "exampleTitle": "Ejemplo Completo",
+      "examplePrompt": "Tengo un negocio de postres saludables para oficinas.\n\nNecesito 3 textos para mi estado de WhatsApp anunciando un nuevo menú semanal.\n\nQue sean cortos, con emojis, en un tono fresco y profesional.",
+      "copyButton": "COPIAR GUÍA COMPLETA",
+      "closingTitle": "Sigue Practicando",
+      "closingText1": "Escribir buenos prompts es como cualquier habilidad — mejora con la práctica.",
+      "closingText2": "Ya diste el primer paso. Ahora abre ChatGPT o Claude, usa tu método CTO, y empieza a experimentar.",
+      "closingText3": "Tú eres capaz de usar la IA de forma inteligente y creativa para tu negocio.",
+      "finalButton": "VOLVER AL TALLER"
+    }
+  },
+  "successCriteria": {
+    "introTitle": "Al terminar este módulo podrás:",
+    "completionTitle": "¡Lo lograste!"
+  },
+  "facebookPrompt": {
+    "title": "¡Abre en tu navegador!",
+    "description": "Estás viendo esto dentro de Facebook. Para una mejor experiencia, abre el taller en Chrome o Safari.",
+    "howTo": "¿Cómo hacerlo?",
+    "step1": "Toca los 3 puntos (⋮) arriba a la derecha",
+    "step2": "Selecciona \"Abrir en navegador\"",
+    "step3": "¡Listo! El taller funcionará mejor",
+    "copyLink": "📋 COPIAR ENLACE",
+    "copied": "✅ ¡COPIADO!",
+    "continueAnyway": "Continuar aquí de todos modos"
   }
 }

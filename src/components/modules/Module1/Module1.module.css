@@ -1,0 +1,409 @@
+.moduleContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Module Header */
+.moduleHeader {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.moduleHeader h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+}
+
+.moduleSubtitle {
+    color: var(--gray);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.timeBadge {
+    display: inline-block;
+    background: var(--secondary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.cardIcon {
+    font-size: 1.5rem;
+}
+
+.cardText {
+    color: var(--gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Explanation Card */
+.explanationCard {
+    text-align: center;
+    background: var(--gradient-soft);
+    border: 2px solid var(--primary-light);
+}
+
+.explanationCard .cardTitle {
+    justify-content: center;
+    color: var(--primary);
+}
+
+.bigIcon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Warning Card */
+.warningCard {
+    background: var(--secondary-light);
+    border: 2px solid var(--secondary);
+}
+
+.warningCard .cardTitle {
+    color: var(--secondary);
+}
+
+/* Simple List */
+.simpleList {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.simpleList li {
+    padding: var(--spacing-sm) 0;
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+/* Can Do List */
+.canDoList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.canDoItem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.canIcon {
+    font-size: 1.5rem;
+    min-width: 32px;
+}
+
+.canDoItem p {
+    margin: 0;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+/* Cannot Do List */
+.cannotDoList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.cannotItem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.cannotIcon {
+    font-size: 1.5rem;
+    min-width: 32px;
+}
+
+.cannotItem p {
+    margin: 0;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+.cannotItem strong {
+    color: var(--secondary);
+}
+
+/* Activity Card */
+.activityCard {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--primary);
+}
+
+.activityCard .cardTitle {
+    color: var(--primary);
+}
+
+/* Quiz */
+.quizSimple {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.quizQuestionItem {
+    padding: var(--spacing-md);
+    background: var(--gray-light);
+    border-radius: var(--radius-md);
+}
+
+.quizStatement {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.quizButtons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
+.quizBtn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.quizBtn:active {
+    transform: scale(0.98);
+}
+
+.quizBtn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.quizFeedback {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.feedbackCorrect {
+    background: var(--success-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.feedbackCorrect p {
+    margin: 0;
+    color: #065F46;
+    font-weight: 600;
+}
+
+.feedbackIncorrect {
+    background: var(--error-light);
+}
+
+.feedbackIncorrect p {
+    margin: 0;
+    color: #991B1B;
+}
+
+.feedbackIcon {
+    font-size: 1.3rem;
+}
+
+/* Ethics Card */
+.ethicsCard {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--warning);
+}
+
+.ethicsCardHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.ethicsIcon {
+    font-size: 1.5rem;
+}
+
+.ethicsCardHeader h3 {
+    margin: 0;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.ethicsReflection {
+    background: var(--warning-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.ethicsReflection p {
+    margin: 0;
+    color: var(--dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.ethicsQuestion {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.ethicsQuestionIcon {
+    font-size: 1.3rem;
+    min-width: 24px;
+}
+
+.ethicsQuestion p {
+    margin: 0;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.btnWhatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    width: 100%;
+    padding: var(--spacing-md);
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btnWhatsapp:active {
+    background: #1da851;
+}
+
+.whatsappIcon {
+    font-size: 1.3rem;
+}
+
+/* Navigation Buttons */
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.btnNav {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s;
+    min-height: 50px;
+    flex: 1;
+    max-width: 180px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btnPrev {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btnPrev:active {
+    background: var(--primary-light);
+}
+
+.btnNext {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.btnNext:active {
+    background: var(--primary-dark);
+    transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .moduleHeader h1 {
+        font-size: 2rem;
+    }
+    
+    .navButtons {
+        justify-content: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .btnNav {
+        max-width: 200px;
+    }
+}

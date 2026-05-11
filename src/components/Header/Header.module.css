@@ -1,0 +1,101 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: var(--gradient);
+    padding: 0 var(--spacing-sm);
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.logoImage {
+    width: 28px;
+    height: auto;
+    object-fit: contain;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.glossaryBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    -webkit-user-select: none;
+    user-select: none;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.glossaryBtn:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.glossaryIcon {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 360px) {
+    .header {
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .logo {
+        font-size: 0.9rem;
+    }
+    
+    .logoImage {
+        width: 24px;
+        height: auto;
+    }
+    
+    .glossaryBtn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headerContent {
+        padding: 0 var(--spacing-xl);
+    }
+    
+    .glossaryBtn:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
