@@ -18,14 +18,14 @@
     "welcome": "Inicio",
     "module1": "IA",
     "module2": "Prompts",
-    "module3": "Módulo 3"
+    "module3": "Marketing"
   },
   "progress": {
     "blockOf": "Bloque {current} de {total}",
     "modules": {
       "module1": "Qué es la IA",
       "module2": "Prompts y Herramientas",
-      "module3": "Módulo 3",
+      "module3": "Marketing con IA",
       "capstone": "Escribir prompts"
     }
   },
@@ -337,7 +337,216 @@
     }
   },
   "module3": {
-    "title": "Módulo 3"
+    "title": "Marketing práctico con IA",
+    "subtitle": "Crea contenido real para tu negocio",
+    "duration": "⏱️ 15-20 minutos",
+    "completion": "¡Listo! Ya tienes una pieza de marketing escrita con tu voz y conectada a una meta concreta de tu semana.",
+    "outcomes": {
+      "item1": "Identificar una meta concreta de marketing para esta semana",
+      "item2": "Escribir un prompt CTO de marketing con tu audiencia y tu voz",
+      "item3": "Revisar la respuesta de la IA y editarla para que suene como tú",
+      "item4": "Producir una pieza de marketing lista para publicar hoy"
+    },
+    "section1": {
+      "sectionLabel": "Sección 1",
+      "title": "Primero decide qué quieres lograr",
+      "explanation": {
+        "p1": "Antes de pedirle nada a la IA, hay algo que tú tienes que decidir: ¿qué quieres lograr esta semana con tu negocio? La IA puede escribirte mil publicaciones, pero si tú no tienes claro para qué son, ninguna te va a servir.",
+        "p2": "Marketing no es postear por postear. Marketing es comunicarte con tus clientes con un propósito. Y los propósitos de un negocio pequeño suelen ser pocos y muy concretos:",
+        "listItem1": "Quieres que vuelvan los clientes que hace tiempo no compran.",
+        "listItem2": "Quieres atraer clientes nuevos en tu zona.",
+        "listItem3": "Quieres vender más de un producto específico que tienes en exceso.",
+        "listItem4": "Quieres anunciar algo nuevo (un sabor, un horario, una promoción).",
+        "listItem5": "Quieres que la gente recuerde que existes esta semana.",
+        "p3": "Cada una de estas metas pide un tipo de mensaje diferente. No es lo mismo invitar a una clienta que ya te conoce a probar tu nuevo pan de yuca, que convencer a alguien que pasa por la calle a entrar por primera vez a tu peluquería.",
+        "p4": "Por eso el primer paso siempre es elegir una meta. Una sola. La de esta semana.",
+        "sofia": "Sofía tiene una peluquería pequeña en Lima. La atiende ella sola. Los martes en la mañana siempre están vacíos. Su meta no es \"tener más clientas en general\" — eso es demasiado ambiguo. Su meta concreta es: <strong>llenar tres horarios de martes en la mañana ofreciendo un descuento a sus clientas habituales</strong>.",
+        "conclusion": "Con una meta así de específica, todo lo que sigue se vuelve mucho más fácil."
+      },
+      "activity": {
+        "title": "Elige tu meta de esta semana",
+        "intro": "Toca una meta. Solo una. La de esta semana.",
+        "goals": {
+          "returningClients": "🔁 Que vuelvan mis clientes habituales",
+          "newClients": "✨ Atraer clientes nuevos",
+          "sellProduct": "📦 Vender un producto específico",
+          "announceNew": "🎉 Anunciar algo nuevo",
+          "beRemembered": "👋 Que se acuerden que existo"
+        },
+        "detailLabel": "¿Algún detalle? (opcional)",
+        "detailPlaceholder": "Ej: el martes en la mañana, el pan de yuca nuevo, las clientas del barrio...",
+        "savedLabel": "✅ Meta guardada. La vas a usar en la Sección 2."
+      },
+      "goalPhrases": {
+        "returningClients": "Quiero que vuelvan mis clientes habituales",
+        "newClients": "Quiero atraer clientes nuevos en mi zona",
+        "sellProduct": "Quiero vender más de un producto específico que tengo en exceso",
+        "announceNew": "Quiero anunciar algo nuevo",
+        "beRemembered": "Quiero que mis clientes se acuerden de que existo esta semana"
+      },
+      "quiz": {
+        "title": "Actividad: ¿Verdad o Mentira?",
+        "statement": "\"Postear todos los días en redes sociales es una meta de marketing.\"",
+        "truth": "🟢 VERDAD",
+        "lie": "🔴 MENTIRA",
+        "correct": "¡Correcto! Postear sin meta es ruido. Decidir qué quieres lograr es lo que vuelve útil cada publicación.",
+        "incorrectExplanation": "Postear es una <em>actividad</em>, no una <em>meta</em>. La meta responde a \"¿para qué postear?\" — por ejemplo, traer clientas nuevas o vender más de un producto específico. Sin meta, los posts no llevan a ningún lado."
+      }
+    },
+    "section2": {
+      "sectionLabel": "Sección 2",
+      "title": "Convierte tu meta en un prompt con CTO",
+      "explanation": {
+        "intro1": "Ya tienes tu meta. Ahora vas a pedirle a la IA que te ayude a cumplirla. Para eso usas el método <strong>CTO</strong>: <strong>Contexto, Tarea, Output</strong>.",
+        "intro2": "Si ya pasaste por el módulo bonus de escribir prompts, esto ya lo conoces. Si no, no te preocupes — son tres letras fáciles que te ayudan a armar cualquier mensaje a la IA. <strong>Contexto</strong> es lo que la IA necesita saber sobre ti y tu negocio. <strong>Tarea</strong> es exactamente lo que quieres que la IA haga. <strong>Output</strong> es cómo quieres que se vea la respuesta. Con esas tres partes, cualquier prompt funciona mucho mejor.",
+        "transition": "Ahora, el marketing tiene una particularidad: cuando hablas de tu negocio en general, el contexto puede ser corto (\"tengo una panadería en Bogotá\"). Cuando le pides a la IA que te escriba marketing, el contexto necesita dos cosas más:",
+        "audience": "<strong>A quién le hablas.</strong> No le hablas a \"todo el mundo\". Le hablas a tus clientas habituales que ya te conocen, o a las mamás del barrio que pasan por la mañana, o a las personas de oficina que paran a tomar café antes del trabajo. Decir a quién le hablas cambia completamente lo que la IA te escribe.",
+        "voice": "<strong>Cómo suenas tú.</strong> Tu negocio tiene una voz. Si tú le hablas a tus clientas como una amiga, no quieres un texto que suene a corporativo. Si tu marca es elegante y cuidada, no quieres emojis por todos lados. Decirle a la IA cómo quieres sonar evita que te dé algo que parezca escrito por otra persona.",
+        "sofiaIntro": "Volvamos a Sofía. Su meta es llenar tres horarios de martes en la mañana ofreciendo un descuento a sus clientas habituales. Su prompt CTO se ve así:",
+        "sofiaContextLabel": "Contexto:",
+        "sofiaContext": "Tengo una peluquería pequeña en Lima. La atiendo yo sola. Mis clientas son mujeres entre 30 y 55 años que viven cerca y vienen cada mes o dos meses. Les hablo con calidez, como a una amiga, no de forma formal.",
+        "sofiaTaskLabel": "Tarea:",
+        "sofiaTask": "Necesito un mensaje de WhatsApp para mandarle a mis clientas habituales, invitándolas a venir un martes en la mañana con 20% de descuento. Solo aplica para martes de este mes.",
+        "sofiaOutputLabel": "Output:",
+        "sofiaOutput": "Que sea corto (máximo 4 líneas), cálido, con uno o dos emojis, y que termine con una pregunta para invitar a que respondan.",
+        "conclusion": "El mismo formato funciona para cualquier tarea de marketing. Cambias la tarea y el output según lo que necesites esta semana: un post para Instagram, un texto para una historia, un flyer para imprimir, un mensaje para tu lista de WhatsApp."
+      },
+      "cto": {
+        "title": "🎯 Recordatorio: el método CTO",
+        "cLetter": "C",
+        "cName": "Contexto",
+        "cDesc": "Quién eres, tu negocio, a quién le hablas",
+        "tLetter": "T",
+        "tName": "Tarea",
+        "tDesc": "Qué quieres que la IA haga",
+        "oLetter": "O",
+        "oName": "Output",
+        "oDesc": "Cómo quieres la respuesta (tono, largo, formato)"
+      },
+      "activity": {
+        "title": "Arma tu prompt CTO para marketing",
+        "intro": "Ya elegiste tu meta. Ahora completemos los tres bloques del prompt.",
+        "contextBlockLabel": "Contexto",
+        "businessLabel": "¿Qué vendes o haces?",
+        "businessPlaceholder": "Ej: peluquería pequeña en Lima, café de oficina, panadería de barrio...",
+        "audienceLabel": "¿A quién le hablas?",
+        "audiencePlaceholder": "Ej: clientas habituales del barrio, mamás jóvenes, personas de oficina...",
+        "voiceLabel": "¿Cómo suenas tú?",
+        "voices": {
+          "warm": "😊 Cálida y cercana",
+          "professional": "👔 Profesional y cuidada",
+          "fun": "🎉 Divertida y juguetona"
+        },
+        "voicePhrases": {
+          "warm": "cálido y cercano, como si le hablaras a una amiga",
+          "professional": "profesional y cuidado",
+          "fun": "divertido y juguetón"
+        },
+        "taskBlockLabel": "Tarea",
+        "taskIntro": "¿Qué formato necesitas?",
+        "formats": {
+          "whatsapp": "💬 Mensaje de WhatsApp",
+          "instagram": "📱 Post para Instagram",
+          "flyer": "🖨️ Texto para flyer",
+          "story": "📖 Historia para Facebook o Instagram"
+        },
+        "formatPhrases": {
+          "whatsapp": "un mensaje de WhatsApp",
+          "instagram": "un post para Instagram",
+          "flyer": "un texto para un flyer",
+          "story": "un texto para una historia de Facebook o Instagram"
+        },
+        "outputBlockLabel": "Output",
+        "outputLabel": "Detalles extra para la respuesta (opcional):",
+        "outputPlaceholder": "Ej: máximo 3 líneas, con emojis, que termine con una pregunta",
+        "generateButton": "✨ ARMAR MI PROMPT",
+        "promptContextTemplate": "Tengo un negocio de {business}. Mis clientes son {audience}. Quiero que me hables con un tono {voicePhrase}.",
+        "promptTaskTemplate": "{goalPhrase}{goalDetail}. Necesito {formatPhrase} para lograrlo.",
+        "promptOutputTemplate": "Output: que sea {details}.",
+        "promptOutputDefault": "claro, breve, y con un llamado a la acción",
+        "resultLabel": "Tu prompt CTO completo:",
+        "copyButton": "📋 COPIAR PROMPT",
+        "openChatGPTButton": "➡️ ABRIR CHATGPT",
+        "fillAll": "Primero elige una meta en la Sección 1 y luego completa contexto, audiencia, voz y formato",
+        "savedLabel": "✅ Prompt guardado. Lo vas a usar en la tarea final."
+      },
+      "quiz": {
+        "title": "Comprueba lo que aprendiste",
+        "question": "¿Cuál de estos prompts está mejor armado para marketing?",
+        "optionA": "\"Escríbeme algo bonito para mi negocio de café.\"",
+        "optionB": "\"Tengo un café pequeño en Buenos Aires. Mis clientes son personas de oficina que paran en la mañana antes del trabajo. Necesito un post para Instagram anunciando un nuevo café de Colombia. Que sea corto, con un emoji, en un tono fresco y cercano.\"",
+        "correct": "¡Exacto! B incluye contexto (qué tipo de negocio, dónde, a quién le habla), tarea específica (un post de Instagram anunciando un café nuevo) y output (corto, con emoji, tono fresco y cercano).",
+        "incorrectExplanation": "B funciona mejor porque la IA no tiene que adivinar nada. A es vaga: la IA no sabe qué tipo de \"algo bonito\" hacer, ni para quién, ni en qué tono."
+      }
+    },
+    "section3": {
+      "sectionLabel": "Sección 3",
+      "title": "Revisa antes de publicar",
+      "explanation": {
+        "intro1": "La IA te va a dar algo. Casi nunca es perfecto, y casi siempre se puede mejorar. Tu trabajo no termina cuando la IA responde — empieza ahí. Tú conoces tu negocio, tu barrio, tus clientas. La IA no.",
+        "intro2": "Antes de copiar y publicar lo que te dio la IA, pásale el filtro de estas tres preguntas:",
+        "q1Title": "¿Suena como yo?",
+        "q1Text": "Léelo en voz baja. ¿Es así como hablas tú? ¿O suena a anuncio de televisión, a corporativo, a alguien que no eres tú? Si no suena a ti, cámbialo. Reemplaza las palabras que no usarías nunca. Acorta las frases que te sonaron forzadas. Tu voz importa porque es lo que tus clientas reconocen y por lo que te eligen.",
+        "q2Title": "¿Le hablaría así a mi cliente?",
+        "q2Text": "Imagina a tu clienta más fiel leyendo ese mensaje. ¿Le va a interesar? ¿Le va a sonar genuino, o como publicidad? La IA tiende a escribir cosas que suenan a todos los negocios al mismo tiempo. Tu marketing tiene que sonar al tuyo — al específico, al de tu barrio.",
+        "q3Title": "¿Cumple mi meta?",
+        "q3Text": "Vuelve a la meta que elegiste en la Sección 1. Si tu meta era llenar tres horarios de martes en la mañana, el mensaje tiene que dejar claro que es para martes en la mañana. Si la IA escribió algo genérico tipo \"ven cuando quieras\", no cumple la meta. Pídele a la IA que lo ajuste, o ajústalo tú.",
+        "commonFixesIntro": "Tres cosas que suelen necesitar arreglo en lo que escribe la IA:",
+        "fix1": "<strong>Precios o monedas que no son los tuyos</strong> — a veces escribe en dólares cuando vendes en pesos, soles o pesos colombianos.",
+        "fix2": "<strong>Referencias culturales que no encajan</strong> — promociones de \"Black Friday\" o \"Spring Break\" en mercados donde nadie lo celebra así.",
+        "fix3": "<strong>Promesas exageradas que tú no harías</strong> — descuentos que no diste, garantías que no ofreces, \"el mejor\" o \"el único\" cuando tú no lo dirías.",
+        "conclusion": "La IA te ahorra el bloqueo de la página en blanco. La revisión es tuya."
+      },
+      "activity": {
+        "title": "Encuentra lo que cambiarías",
+        "intro": "Sofía le pidió a la IA un mensaje para invitar a sus clientas a venir un martes en la mañana con 20% de descuento. La IA le respondió esto:",
+        "aiExample": "\"Estimada clienta, nos complace ofrecerle el mejor servicio de peluquería del país. Esta semana tenemos una promoción exclusiva con 50% de descuento en todos nuestros servicios. ¡No deje pasar esta oportunidad única! 📊\"",
+        "instruction": "Marca los problemas que ves (puedes marcar varios):",
+        "issues": {
+          "tooFormal": "🚫 \"Estimada clienta\" — muy formal, Sofía habla como amiga",
+          "wrongDiscount": "🚫 \"50% de descuento\" — ella dijo 20%, no 50%",
+          "exaggeratedPromise": "🚫 \"el mejor del país\" — promesa exagerada que ella no haría",
+          "wrongEmoji": "🚫 \"📊\" — emoji corporativo, no encaja",
+          "missingTuesday": "🚫 No menciona el martes en la mañana"
+        },
+        "showCorrectedButton": "VER VERSIÓN CORREGIDA",
+        "correctedLabel": "Versión corregida (suena a Sofía):",
+        "correctedExample": "\"¡Hola! 💕 Esta semana tengo turnos libres los martes en la mañana y quiero verte. Te dejo 20% de descuento si vienes ese día. ¿Te separo uno? 😊\""
+      },
+      "quiz": {
+        "title": "Comprueba lo que aprendiste",
+        "question": "La IA te da un mensaje que técnicamente está bien escrito, pero suena genérico, igual a cualquier negocio. ¿Qué haces?",
+        "optionA": "Lo publico igual porque la IA sabe escribir mejor que yo.",
+        "optionB": "Lo edito reemplazando frases genéricas por palabras y referencias que sí uso en mi día a día.",
+        "optionC": "Lo descarto y lo escribo todo desde cero yo misma.",
+        "correct": "¡Exacto! La IA te dio un punto de partida — eso ya te ahorró tiempo. Editarlo con tu voz es más rápido que empezar de cero, y mucho mejor que publicar algo que no suena a ti.",
+        "incorrectExplanation": "La opción B es la que combina lo mejor de los dos mundos. C también funciona, pero pierdes la ventaja que te dio la IA. A es el error más común: publicar sin filtrar genera marketing que no conecta con tus clientas."
+      }
+    },
+    "ethics": {
+      "title": "Momento de reflexión",
+      "text": "No todo en marketing pasa por la IA. Hay momentos en que escribir tú misma — sin ayuda — comunica algo que ninguna IA puede: tu presencia real, tu historia, tu cariño por tus clientas. Un mensaje de condolencias a una clienta fiel, una respuesta personal a una queja, un agradecimiento sincero después de una venta importante. Esos los escribes tú.",
+      "question": "¿En qué momento de tu negocio NO usarías la IA, aunque te ahorre tiempo?",
+      "shareButton": "COMPARTIR EN EL GRUPO",
+      "shareText": "¿En qué momento de tu negocio NO usarías la IA para marketing, aunque te ahorre tiempo? 🤔"
+    },
+    "culminating": {
+      "title": "Tu pieza de marketing lista para hoy",
+      "intro": "Juntemos todo. Aquí vas a producir un mensaje real que puedas publicar o enviar el mismo día.",
+      "recapTitle": "Lo que ya armaste:",
+      "recapGoalLabel": "Tu meta:",
+      "recapPromptLabel": "Tu prompt CTO:",
+      "recapEmpty": "Aún no completaste esta parte — vuelve a la sección anterior.",
+      "pasteLabel": "Pega aquí la respuesta que te dio ChatGPT o Claude:",
+      "pastePlaceholder": "Pega el texto que te dio la IA...",
+      "checksTitle": "Pasa el filtro de las tres preguntas:",
+      "checkSoundsLikeMe": "¿Suena como yo?",
+      "checkSpeaksToClient": "¿Le hablaría así a mi cliente?",
+      "checkMeetsGoal": "¿Cumple mi meta?",
+      "copyButton": "📋 COPIAR MI TEXTO FINAL",
+      "sendWhatsAppButton": "💬 ENVIAR POR WHATSAPP",
+      "fillEdited": "Edita o escribe tu texto final antes de copiarlo o enviarlo"
+    }
   },
   "capstone": {
     "backButton": "VOLVER AL TALLER",
@@ -584,10 +793,5 @@
       },
       "bonusBadge": "Bonus"
     }
-  },
-  "module3Stub": {
-    "title": "Próximamente",
-    "body": "Este módulo estará disponible pronto. Vuelve al panel para continuar con los otros módulos.",
-    "back": "Volver al panel"
   }
 }

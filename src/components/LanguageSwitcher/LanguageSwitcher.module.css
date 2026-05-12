@@ -1,40 +1,50 @@
 .switcher {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 }
 
 .langBtn {
     background: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.85rem;
+    color: var(--gray);
+    font-size: var(--text-xs);
     font-weight: 600;
-    padding: 4px 8px;
+    padding: var(--spacing-2xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
     cursor: pointer;
-    transition: color 0.2s;
-    min-height: 44px;
-    min-width: 44px;
+    transition:
+        color var(--duration-fast) var(--ease-out),
+        background var(--duration-fast) var(--ease-out);
+    min-height: 38px;
+    min-width: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .langBtn:active {
-    color: white;
+    color: var(--primary-darker);
+    background: var(--primary-light);
 }
 
 .langBtn.active {
-    color: white;
+    color: var(--primary-darker);
+    background: var(--primary-light);
 }
 
 .divider {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 0.85rem;
+    color: var(--border-strong);
+    font-size: var(--text-xs);
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 @media (min-width: 1024px) {
     .langBtn:hover {
-        color: white;
+        color: var(--primary-darker);
+        background: var(--primary-light);
     }
 }

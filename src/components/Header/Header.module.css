@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 56px;
+    height: 100px;
     background: rgba(255, 252, 249, 0.85);
     backdrop-filter: saturate(180%) blur(16px);
     -webkit-backdrop-filter: saturate(180%) blur(16px);
@@ -42,7 +42,7 @@
 }
 
 .logoImage {
-    width: 30px;
+    width: 80px;
     height: auto;
     object-fit: contain;
 }
@@ -97,7 +97,7 @@
     }
 
     .logoImage {
-        width: 24px;
+        width: 60px;
     }
 
     .glossaryBtn,

@@ -22,8 +22,8 @@ export default function Header({ onGlossaryOpen, userEmail }: Props) {
           <Image
             src="/images/logomujertech1.png"
             alt="MujerTech Logo"
-            width={28}
-            height={28}
+            width={80}
+            height={80}
             className={styles.logoImage}
             priority
           />

@@ -18,14 +18,14 @@
     "welcome": "Home",
     "module1": "AI",
     "module2": "Prompts",
-    "module3": "Module 3"
+    "module3": "Marketing"
   },
   "progress": {
     "blockOf": "Block {current} of {total}",
     "modules": {
       "module1": "What is AI",
       "module2": "Prompts & Tools",
-      "module3": "Module 3",
+      "module3": "Marketing with AI",
       "capstone": "Writing prompts"
     }
   },
@@ -337,7 +337,216 @@
     }
   },
   "module3": {
-    "title": "Module 3"
+    "title": "Practical Marketing with AI",
+    "subtitle": "Create real content for your business",
+    "duration": "⏱️ 15-20 minutes",
+    "completion": "Done! You have a piece of marketing written in your voice and tied to a concrete goal for your week.",
+    "outcomes": {
+      "item1": "Identify a concrete marketing goal for this week",
+      "item2": "Write a CTO marketing prompt with your audience and your voice",
+      "item3": "Review the AI's response and edit it so it sounds like you",
+      "item4": "Produce a piece of marketing ready to publish today"
+    },
+    "section1": {
+      "sectionLabel": "Section 1",
+      "title": "First, decide what you want to achieve",
+      "explanation": {
+        "p1": "Before you ask AI for anything, there's something you have to decide: what do you want to achieve this week with your business? AI can write you a thousand posts, but if you're not clear about what they're for, none of them will help.",
+        "p2": "Marketing isn't posting for the sake of posting. Marketing is communicating with your customers with a purpose. And the purposes of a small business tend to be few and very concrete:",
+        "listItem1": "You want customers who haven't bought in a while to come back.",
+        "listItem2": "You want to attract new customers in your area.",
+        "listItem3": "You want to sell more of a specific product you have in excess.",
+        "listItem4": "You want to announce something new (a flavor, an hour, a promotion).",
+        "listItem5": "You want people to remember you exist this week.",
+        "p3": "Each of these goals calls for a different kind of message. Inviting a regular who already knows you to try your new yuca bread is not the same as convincing someone walking by to step into your hair salon for the first time.",
+        "p4": "That's why the first step is always to choose a goal. Just one. The one for this week.",
+        "sofia": "Sofía has a small hair salon in Lima. She runs it alone. Tuesday mornings are always empty. Her goal isn't \"more clients in general\" — that's too vague. Her concrete goal is: <strong>fill three Tuesday morning slots by offering a discount to her regulars</strong>.",
+        "conclusion": "With a goal that specific, everything that follows gets much easier."
+      },
+      "activity": {
+        "title": "Choose your goal for this week",
+        "intro": "Tap one goal. Just one. The one for this week.",
+        "goals": {
+          "returningClients": "🔁 Get my regulars to come back",
+          "newClients": "✨ Attract new customers",
+          "sellProduct": "📦 Sell a specific product",
+          "announceNew": "🎉 Announce something new",
+          "beRemembered": "👋 Stay top of mind"
+        },
+        "detailLabel": "Any detail? (optional)",
+        "detailPlaceholder": "Ex: Tuesday mornings, the new yuca bread, the regulars in the neighborhood...",
+        "savedLabel": "✅ Goal saved. You'll use it in Section 2."
+      },
+      "goalPhrases": {
+        "returningClients": "I want my regulars to come back",
+        "newClients": "I want to attract new customers in my area",
+        "sellProduct": "I want to sell more of a specific product I have in excess",
+        "announceNew": "I want to announce something new",
+        "beRemembered": "I want my customers to remember I exist this week"
+      },
+      "quiz": {
+        "title": "Activity: True or False?",
+        "statement": "\"Posting on social media every day is a marketing goal.\"",
+        "truth": "🟢 TRUE",
+        "lie": "🔴 FALSE",
+        "correct": "Correct! Posting without a goal is noise. Deciding what you want to achieve is what makes every post useful.",
+        "incorrectExplanation": "Posting is an <em>activity</em>, not a <em>goal</em>. A goal answers \"what is the posting for?\" — for example, bringing in new customers or selling more of a specific product. Without a goal, posts don't lead anywhere."
+      }
+    },
+    "section2": {
+      "sectionLabel": "Section 2",
+      "title": "Turn your goal into a prompt with CTO",
+      "explanation": {
+        "intro1": "You have your goal. Now you're going to ask AI to help you reach it. To do that, you use the <strong>CTO</strong> method: <strong>Context, Task, Output</strong>.",
+        "intro2": "If you already went through the bonus prompt-writing module, you know this. If not, don't worry — they're three easy letters that help you put together any message to AI. <strong>Context</strong> is what AI needs to know about you and your business. <strong>Task</strong> is exactly what you want AI to do. <strong>Output</strong> is how you want the response to look. With those three parts, any prompt works much better.",
+        "transition": "Now, marketing has a particularity: when you talk about your business in general, the context can be short (\"I have a bakery in Bogotá\"). When you ask AI to write marketing for you, the context needs two more things:",
+        "audience": "<strong>Who you're talking to.</strong> You don't talk to \"everyone.\" You talk to your regulars who already know you, or the moms in the neighborhood who pass by in the morning, or the office workers who stop for coffee before work. Saying who you're talking to completely changes what AI writes for you.",
+        "voice": "<strong>What's your voice.</strong> Your business has a voice. If you talk to your customers like a friend, you don't want text that sounds corporate. If your brand is elegant and polished, you don't want emojis everywhere. Telling AI how you want to sound stops it from giving you something that sounds like it was written by someone else.",
+        "sofiaIntro": "Back to Sofía. Her goal is to fill three Tuesday morning slots by offering a discount to her regulars. Her CTO prompt looks like this:",
+        "sofiaContextLabel": "Context:",
+        "sofiaContext": "I have a small hair salon in Lima. I run it alone. My clients are women between 30 and 55 who live nearby and come every month or two. I talk to them warmly, like a friend, not formally.",
+        "sofiaTaskLabel": "Task:",
+        "sofiaTask": "I need a WhatsApp message to send to my regulars, inviting them to come on a Tuesday morning with 20% off. Only valid for Tuesdays this month.",
+        "sofiaOutputLabel": "Output:",
+        "sofiaOutput": "Keep it short (max 4 lines), warm, with one or two emojis, and end with a question to invite replies.",
+        "conclusion": "The same format works for any marketing task. You change the task and the output depending on what you need this week: an Instagram post, a story caption, flyer text, a message for your WhatsApp list."
+      },
+      "cto": {
+        "title": "🎯 Quick reminder: the CTO method",
+        "cLetter": "C",
+        "cName": "Context",
+        "cDesc": "Who you are, your business, who you're talking to",
+        "tLetter": "T",
+        "tName": "Task",
+        "tDesc": "What you want AI to do",
+        "oLetter": "O",
+        "oName": "Output",
+        "oDesc": "How you want the response (tone, length, format)"
+      },
+      "activity": {
+        "title": "Build your CTO marketing prompt",
+        "intro": "You've chosen your goal. Now let's fill in the three blocks of the prompt.",
+        "contextBlockLabel": "Context",
+        "businessLabel": "What do you sell or do?",
+        "businessPlaceholder": "Ex: a small hair salon in Lima, an office coffee shop, a neighborhood bakery...",
+        "audienceLabel": "Who are you talking to?",
+        "audiencePlaceholder": "Ex: my regulars in the neighborhood, young moms, office workers...",
+        "voiceLabel": "What's your voice?",
+        "voices": {
+          "warm": "😊 Warm and personal",
+          "professional": "👔 Professional and polished",
+          "fun": "🎉 Fun and playful"
+        },
+        "voicePhrases": {
+          "warm": "warm and personal, as if talking to a friend",
+          "professional": "professional and polished",
+          "fun": "fun and playful"
+        },
+        "taskBlockLabel": "Task",
+        "taskIntro": "What format do you need?",
+        "formats": {
+          "whatsapp": "💬 WhatsApp message",
+          "instagram": "📱 Instagram post",
+          "flyer": "🖨️ Flyer text",
+          "story": "📖 Facebook or Instagram story"
+        },
+        "formatPhrases": {
+          "whatsapp": "a WhatsApp message",
+          "instagram": "an Instagram post",
+          "flyer": "flyer text",
+          "story": "a Facebook or Instagram story caption"
+        },
+        "outputBlockLabel": "Output",
+        "outputLabel": "Extra details for the response (optional):",
+        "outputPlaceholder": "Ex: max 3 lines, with emojis, ending in a question",
+        "generateButton": "✨ BUILD MY PROMPT",
+        "promptContextTemplate": "I have a business — {business}. My customers are {audience}. I want you to talk to me in a tone that is {voicePhrase}.",
+        "promptTaskTemplate": "{goalPhrase}{goalDetail}. I need {formatPhrase} to do it.",
+        "promptOutputTemplate": "Output: keep it {details}.",
+        "promptOutputDefault": "clear, short, and with a call to action",
+        "resultLabel": "Your complete CTO prompt:",
+        "copyButton": "📋 COPY PROMPT",
+        "openChatGPTButton": "➡️ OPEN CHATGPT",
+        "fillAll": "First choose a goal in Section 1, then fill in context, audience, voice, and format",
+        "savedLabel": "✅ Prompt saved. You'll use it in the final task."
+      },
+      "quiz": {
+        "title": "Check what you learned",
+        "question": "Which of these prompts is better built for marketing?",
+        "optionA": "\"Write me something nice for my coffee shop.\"",
+        "optionB": "\"I have a small coffee shop in Buenos Aires. My customers are office workers who stop in the morning before work. I need an Instagram post announcing a new coffee from Colombia. Keep it short, with one emoji, in a fresh and friendly tone.\"",
+        "correct": "Exactly! B includes context (what kind of business, where, who it talks to), a specific task (an Instagram post announcing a new coffee), and output (short, one emoji, fresh and friendly tone).",
+        "incorrectExplanation": "B works better because AI doesn't have to guess anything. A is vague: AI doesn't know what kind of \"something nice\" to make, for whom, or in what tone."
+      }
+    },
+    "section3": {
+      "sectionLabel": "Section 3",
+      "title": "Review before you publish",
+      "explanation": {
+        "intro1": "AI is going to give you something. It's almost never perfect, and it almost always can be improved. Your job doesn't end when AI responds — it starts there. You know your business, your neighborhood, your customers. AI doesn't.",
+        "intro2": "Before copying and publishing what AI gave you, run it through these three questions:",
+        "q1Title": "Does it sound like me?",
+        "q1Text": "Read it under your breath. Is that how you talk? Or does it sound like a TV ad, like a corporation, like someone who isn't you? If it doesn't sound like you, change it. Replace the words you'd never use. Shorten the phrases that felt forced. Your voice matters because it's what your customers recognize and why they choose you.",
+        "q2Title": "Would I really talk to my customer this way?",
+        "q2Text": "Imagine your most loyal customer reading that message. Is she going to care? Is it going to sound genuine, or like advertising? AI tends to write things that sound like every business at once. Your marketing has to sound like yours — specific, like your neighborhood.",
+        "q3Title": "Does it meet my goal?",
+        "q3Text": "Go back to the goal you chose in Section 1. If your goal was to fill three Tuesday morning slots, the message has to make it clear it's for Tuesday morning. If AI wrote something generic like \"come whenever you want,\" it doesn't meet the goal. Ask AI to adjust it, or adjust it yourself.",
+        "commonFixesIntro": "Three things that often need fixing in what AI writes:",
+        "fix1": "<strong>Prices or currencies that aren't yours</strong> — sometimes it writes in dollars when you sell in pesos, soles, or Colombian pesos.",
+        "fix2": "<strong>Cultural references that don't fit</strong> — \"Black Friday\" or \"Spring Break\" promotions in markets where nobody celebrates them that way.",
+        "fix3": "<strong>Exaggerated promises you wouldn't make</strong> — discounts you didn't give, guarantees you don't offer, \"the best\" or \"the only\" when you wouldn't say that yourself.",
+        "conclusion": "AI saves you from the blank-page block. The review is yours."
+      },
+      "activity": {
+        "title": "Find what you'd change",
+        "intro": "Sofía asked AI for a message to invite her regulars to come on a Tuesday morning with 20% off. AI replied with this:",
+        "aiExample": "\"Dear customer, we are pleased to offer you the best hair salon service in the country. This week we have an exclusive promotion with 50% off all our services. Don't miss this unique opportunity! 📊\"",
+        "instruction": "Mark the problems you see (you can mark several):",
+        "issues": {
+          "tooFormal": "🚫 \"Dear customer\" — too formal, Sofía talks like a friend",
+          "wrongDiscount": "🚫 \"50% off\" — she said 20%, not 50%",
+          "exaggeratedPromise": "🚫 \"the best in the country\" — exaggerated promise she wouldn't make",
+          "wrongEmoji": "🚫 \"📊\" — corporate emoji, doesn't fit",
+          "missingTuesday": "🚫 Doesn't mention Tuesday morning"
+        },
+        "showCorrectedButton": "SEE THE CORRECTED VERSION",
+        "correctedLabel": "Corrected version (sounds like Sofía):",
+        "correctedExample": "\"Hi! 💕 This week I have open slots on Tuesday mornings and I'd love to see you. 20% off if you come that day. Want me to save you one? 😊\""
+      },
+      "quiz": {
+        "title": "Check what you learned",
+        "question": "AI gives you a message that's technically well-written but sounds generic, like any business. What do you do?",
+        "optionA": "Post it as is — AI writes better than I do.",
+        "optionB": "Edit it, replacing generic phrases with words and references I actually use.",
+        "optionC": "Throw it out and write it from scratch myself.",
+        "correct": "Exactly! AI gave you a starting point — that already saved you time. Editing it in your voice is faster than starting from scratch, and much better than publishing something that doesn't sound like you.",
+        "incorrectExplanation": "Option B combines the best of both worlds. C also works, but you lose the head start AI gave you. A is the most common mistake: publishing without a filter creates marketing that doesn't connect with your customers."
+      }
+    },
+    "ethics": {
+      "title": "Moment of reflection",
+      "text": "Not everything in marketing goes through AI. There are moments where writing it yourself — without help — communicates something no AI can: your real presence, your story, your care for your customers. A condolence message to a loyal customer, a personal reply to a complaint, a sincere thank-you after an important sale. Those you write yourself.",
+      "question": "When in your business would you NOT use AI, even if it saves you time?",
+      "shareButton": "SHARE IN THE GROUP",
+      "shareText": "When in your business would you NOT use AI for marketing, even if it saves you time? 🤔"
+    },
+    "culminating": {
+      "title": "Your marketing piece, ready for today",
+      "intro": "Let's bring it all together. Here you're going to produce a real message you can publish or send today.",
+      "recapTitle": "What you've already built:",
+      "recapGoalLabel": "Your goal:",
+      "recapPromptLabel": "Your CTO prompt:",
+      "recapEmpty": "You haven't filled this in yet — go back to the previous section.",
+      "pasteLabel": "Paste the response ChatGPT or Claude gave you here:",
+      "pastePlaceholder": "Paste the text the AI gave you...",
+      "checksTitle": "Run it through the three questions:",
+      "checkSoundsLikeMe": "Does it sound like me?",
+      "checkSpeaksToClient": "Would I really talk to my customer this way?",
+      "checkMeetsGoal": "Does it meet my goal?",
+      "copyButton": "📋 COPY MY FINAL TEXT",
+      "sendWhatsAppButton": "💬 SEND VIA WHATSAPP",
+      "fillEdited": "Edit or write your final text before copying or sending it"
+    }
   },
   "capstone": {
     "backButton": "BACK TO WORKSHOP",
@@ -584,10 +793,5 @@
       },
       "bonusBadge": "Bonus"
     }
-  },
-  "module3Stub": {
-    "title": "Coming soon",
-    "body": "This module will be available soon. Head back to the dashboard to continue with the other modules.",
-    "back": "Back to dashboard"
   }
 }

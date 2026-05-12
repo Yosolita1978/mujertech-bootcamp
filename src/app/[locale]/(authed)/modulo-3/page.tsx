@@ -1,29 +1,32 @@
-import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
-import styles from './page.module.css';
+import { setRequestLocale } from 'next-intl/server';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
+import Module3Client from './Module3Client';
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default async function Module3StubPage({ params }: Props) {
+async function getMainLessonId(moduleSlug: string): Promise<string> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from('lessons')
+    .select('id, modules!inner(slug)')
+    .eq('slug', 'main')
+    .eq('modules.slug', moduleSlug)
+    .single();
+
+  if (error || !data) {
+    throw new Error(
+      `Lesson row missing for module=${moduleSlug}: ${error?.message ?? 'no data'}`
+    );
+  }
+  return data.id;
+}
+
+export default async function Modulo3Page({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations('module3Stub');
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <span className={styles.icon} aria-hidden="true">
-          🚧
-        </span>
-        <h1 className={styles.title}>{t('title')}</h1>
-        <p className={styles.body}>{t('body')}</p>
-        <Link href="/" className={styles.backLink}>
-          ← {t('back')}
-        </Link>
-      </div>
-    </div>
-  );
+  const lessonId = await getMainLessonId('module3');
+  return <Module3Client lessonId={lessonId} />;
 }

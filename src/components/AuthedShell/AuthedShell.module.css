@@ -1,6 +1,6 @@
 .main {
-  /* Header is position: fixed at 56px tall — keep content clear of it. */
-  margin-top: 56px;
+  /* Header is position: fixed at 100px tall — keep content clear of it. */
+  margin-top: 100px;
   padding-bottom: var(--spacing-3xl);
-  min-height: calc(100dvh - 56px);
+  min-height: calc(100dvh - 100px);
 }

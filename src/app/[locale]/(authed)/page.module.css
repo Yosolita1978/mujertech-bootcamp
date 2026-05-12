@@ -150,6 +150,11 @@
   color: #92400e;
 }
 
+.cardPlum .cardIcon {
+  background: linear-gradient(135deg, #ede9fe 0%, #d8c5ff 100%);
+  color: #5b21b6;
+}
+
 .cardMuted .cardIcon {
   background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
   color: var(--gray-strong);

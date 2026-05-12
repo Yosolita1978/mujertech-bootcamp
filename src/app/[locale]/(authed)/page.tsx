@@ -10,7 +10,7 @@ import styles from './page.module.css';
 
 type ModuleSlug = 'module1' | 'module2' | 'module3' | 'capstone';
 type ModuleRoute = '/modulo-1' | '/modulo-2' | '/modulo-3' | '/prompts';
-type Accent = 'teal' | 'coral' | 'amber' | 'muted';
+type Accent = 'teal' | 'coral' | 'amber' | 'plum' | 'muted';
 
 type ModuleCard = {
   slug: ModuleSlug;
@@ -42,9 +42,9 @@ const CARDS: readonly ModuleCard[] = [
     slug: 'module3',
     href: '/modulo-3',
     isBonus: false,
-    isComingSoon: true,
-    icon: '⏳',
-    accent: 'muted',
+    isComingSoon: false,
+    icon: '🎯',
+    accent: 'plum',
   },
   {
     slug: 'capstone',
@@ -67,6 +67,7 @@ const ACCENT_CLASS: Record<Accent, string> = {
   teal: styles.cardTeal,
   coral: styles.cardCoral,
   amber: styles.cardAmber,
+  plum: styles.cardPlum,
   muted: styles.cardMuted,
 };
 
