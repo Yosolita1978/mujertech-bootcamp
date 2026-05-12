@@ -26,7 +26,7 @@
       "module1": "What is AI",
       "module2": "Prompts & Tools",
       "module3": "Module 3",
-      "capstone": "New Module"
+      "capstone": "Writing prompts"
     }
   },
   "glossary": {
@@ -564,5 +564,30 @@
       "retry": "Back to sign in"
     },
     "signOut": "Sign out"
+  },
+  "dashboard": {
+    "kicker": "Welcome",
+    "greeting": "Hi!",
+    "greetingWithName": "Hi, <emph>{name}</emph>!",
+    "subheading": "Pick up your learning whenever you'd like.",
+    "card": {
+      "status": {
+        "notStarted": "Not started",
+        "inProgress": "In progress",
+        "completed": "Completed",
+        "comingSoon": "Coming soon"
+      },
+      "cta": {
+        "start": "Start",
+        "continue": "Continue",
+        "review": "Review"
+      },
+      "bonusBadge": "Bonus"
+    }
+  },
+  "module3Stub": {
+    "title": "Coming soon",
+    "body": "This module will be available soon. Head back to the dashboard to continue with the other modules.",
+    "back": "Back to dashboard"
   }
 }

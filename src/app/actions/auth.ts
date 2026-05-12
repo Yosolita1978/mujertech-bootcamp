@@ -8,5 +8,5 @@ export async function signOutAction(): Promise<void> {
   const supabase = await createSupabaseServerClient();
   await supabase.auth.signOut();
   const locale = await getLocale();
-  redirect(`/${locale}/`);
+  redirect(`/${locale}/login`);
 }

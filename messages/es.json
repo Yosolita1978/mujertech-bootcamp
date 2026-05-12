@@ -26,7 +26,7 @@
       "module1": "Qué es la IA",
       "module2": "Prompts y Herramientas",
       "module3": "Módulo 3",
-      "capstone": "Nuevo Módulo"
+      "capstone": "Escribir prompts"
     }
   },
   "glossary": {
@@ -564,5 +564,30 @@
       "retry": "Volver al inicio de sesión"
     },
     "signOut": "Cerrar sesión"
+  },
+  "dashboard": {
+    "kicker": "Bienvenida",
+    "greeting": "¡Hola!",
+    "greetingWithName": "¡Hola, <emph>{name}</emph>!",
+    "subheading": "Continúa tu aprendizaje cuando quieras.",
+    "card": {
+      "status": {
+        "notStarted": "Sin empezar",
+        "inProgress": "En progreso",
+        "completed": "Completado",
+        "comingSoon": "Próximamente"
+      },
+      "cta": {
+        "start": "Comenzar",
+        "continue": "Continuar",
+        "review": "Revisar"
+      },
+      "bonusBadge": "Bonus"
+    }
+  },
+  "module3Stub": {
+    "title": "Próximamente",
+    "body": "Este módulo estará disponible pronto. Vuelve al panel para continuar con los otros módulos.",
+    "back": "Volver al panel"
   }
 }
