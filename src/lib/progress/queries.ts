@@ -49,3 +49,22 @@ export async function getProgressByModuleSlug(
 
   return statusBySlug;
 }
+
+/**
+ * Returns true if the given user has submitted the marketing assessment at
+ * least once. RLS already restricts reads to the owner's rows; userId is
+ * passed explicitly as defense-in-depth.
+ */
+export async function hasSubmittedAssessment(userId: string): Promise<boolean> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from('marketing_assessment_submissions')
+    .select('id')
+    .eq('user_id', userId)
+    .limit(1)
+    .maybeSingle();
+  if (error) {
+    throw new Error(`Failed to check assessment status: ${error.message}`);
+  }
+  return data !== null;
+}

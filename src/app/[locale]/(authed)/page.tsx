@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import {
   getProgressByModuleSlug,
+  hasSubmittedAssessment,
   type ProgressStatus,
 } from '@/lib/progress/queries';
 import styles from './page.module.css';
@@ -94,13 +95,34 @@ export default async function DashboardPage({ params }: Props) {
     redirect(`/${locale}/login`);
   }
 
-  const progress = await getProgressByModuleSlug(user.id);
+  // Parallelize: progress and assessment-submitted state are independent.
+  const [progress, assessmentSubmitted] = await Promise.all([
+    getProgressByModuleSlug(user.id),
+    hasSubmittedAssessment(user.id),
+  ]);
 
   const t = await getTranslations('dashboard');
   const tCard = await getTranslations('dashboard.card');
   const tModules = await getTranslations('progress.modules');
+  const tDashAssessment = await getTranslations('dashboard.assessment');
 
   const name = pickUserNameFromEmail(user.email);
+  const module3Completed = progress.module3 === 'completed';
+
+  const assessmentStatus: DisplayStatus = assessmentSubmitted
+    ? 'completed'
+    : 'not_started';
+  const assessmentStatusLabel = assessmentSubmitted
+    ? tDashAssessment('statusSubmitted')
+    : tDashAssessment('statusNotStarted');
+  const assessmentClasses = [
+    styles.card,
+    ACCENT_CLASS.plum,
+    STATUS_CLASS[assessmentStatus],
+    assessmentSubmitted ? styles.cardCompleted : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className={styles.container}>
@@ -199,6 +221,37 @@ export default async function DashboardPage({ params }: Props) {
             </Link>
           );
         })}
+
+        {module3Completed && (
+          <Link
+            href="/modulo-3/evaluacion"
+            className={assessmentClasses}
+            aria-label={`${tDashAssessment('title')} — ${assessmentStatusLabel}`}
+          >
+            <span className={styles.cardIcon} aria-hidden="true">
+              📝
+            </span>
+            <div className={styles.cardBody}>
+              <h2 className={styles.cardTitle}>{tDashAssessment('title')}</h2>
+              <span className={styles.cardStatus}>
+                <span className={styles.cardStatusDot} aria-hidden="true" />
+                {assessmentStatusLabel}
+              </span>
+            </div>
+            {assessmentSubmitted ? (
+              <span
+                className={`${styles.cardCta} ${styles.cardCtaCompleted}`}
+                aria-hidden="true"
+              >
+                ✓
+              </span>
+            ) : (
+              <span className={styles.cardCta} aria-hidden="true">
+                →
+              </span>
+            )}
+          </Link>
+        )}
       </div>
     </div>
   );

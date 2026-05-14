@@ -792,6 +792,72 @@
         "review": "Review"
       },
       "bonusBadge": "Bonus"
+    },
+    "assessment": {
+      "title": "Final assessment",
+      "statusNotStarted": "Available",
+      "statusSubmitted": "Submitted"
+    }
+  },
+  "assessment": {
+    "title": "Final assessment",
+    "subtitle": "Share your original prompt, what you changed, and why.",
+    "intro": "Before submitting, have your original prompt, the AI's response, and your revised prompt at hand.",
+    "fields": {
+      "businessGoal": {
+        "label": "What is your marketing goal?",
+        "placeholder": "E.g.: fill three Tuesday-morning slots by offering my regulars a discount..."
+      },
+      "promptV1": {
+        "label": "Your first prompt",
+        "placeholder": "Paste here the first prompt you sent the AI..."
+      },
+      "aiOutput": {
+        "label": "AI response",
+        "placeholder": "Paste here what the AI replied..."
+      },
+      "promptV2": {
+        "label": "Your revised prompt",
+        "placeholder": "Paste here your improved prompt..."
+      },
+      "whatChanged": {
+        "label": "What did you change and why?",
+        "placeholder": "Describe what you changed between the first and second prompt, and why..."
+      },
+      "whyChanged": {
+        "label": "How do you evaluate whether the response meets your goal?",
+        "placeholder": "Explain how you know whether the AI's response works for your marketing goal..."
+      }
+    },
+    "submit": "Submit assessment",
+    "submitting": "Submitting...",
+    "errors": {
+      "missingField": "Please complete all fields.",
+      "notAuthenticated": "Your session expired. Please sign in again.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "alreadySubmitted": {
+      "title": "You've already submitted your assessment ✅",
+      "body": "Here's what you sent on {date}.",
+      "backToDashboard": "Back to dashboard"
+    },
+    "thanks": {
+      "title": "Thank you! 💚",
+      "body": "Thanks for sharing your final work.",
+      "backToDashboard": "Back to dashboard"
+    }
+  },
+  "admin": {
+    "title": "Submitted assessments",
+    "subtitle": "{count, plural, =0 {No submissions yet} =1 {1 submission} other {# submissions}}",
+    "empty": "No submissions yet.",
+    "fields": {
+      "businessGoal": "Marketing goal",
+      "promptV1": "First prompt",
+      "aiOutput": "AI response",
+      "promptV2": "Revised prompt",
+      "whatChanged": "What changed and why",
+      "whyChanged": "How they evaluate the result"
     }
   }
 }

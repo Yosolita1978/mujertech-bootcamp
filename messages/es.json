@@ -792,6 +792,72 @@
         "review": "Revisar"
       },
       "bonusBadge": "Bonus"
+    },
+    "assessment": {
+      "title": "Evaluación final",
+      "statusNotStarted": "Disponible",
+      "statusSubmitted": "Enviada"
+    }
+  },
+  "assessment": {
+    "title": "Evaluación final",
+    "subtitle": "Comparte tu prompt original, lo que hiciste, y por qué.",
+    "intro": "Antes de enviar, asegúrate de tener a la mano tu prompt original, la respuesta de la IA, y tu prompt revisado.",
+    "fields": {
+      "businessGoal": {
+        "label": "¿Cuál es tu meta de marketing?",
+        "placeholder": "Ej: llenar tres horarios de martes en la mañana ofreciendo un descuento a mis clientas habituales..."
+      },
+      "promptV1": {
+        "label": "Tu primer prompt",
+        "placeholder": "Pega aquí el primer prompt que le mandaste a la IA..."
+      },
+      "aiOutput": {
+        "label": "Respuesta de la IA",
+        "placeholder": "Pega aquí lo que te respondió la IA..."
+      },
+      "promptV2": {
+        "label": "Tu prompt revisado",
+        "placeholder": "Pega aquí tu prompt mejorado..."
+      },
+      "whatChanged": {
+        "label": "¿Qué cambiaste y por qué?",
+        "placeholder": "Describe qué cambiaste entre el primer y segundo prompt, y por qué hiciste esos cambios..."
+      },
+      "whyChanged": {
+        "label": "¿Cómo evalúas si la respuesta cumple tu meta?",
+        "placeholder": "Explica cómo sabes si la respuesta de la IA sirve para tu meta de marketing..."
+      }
+    },
+    "submit": "Enviar evaluación",
+    "submitting": "Enviando...",
+    "errors": {
+      "missingField": "Por favor completa todos los campos.",
+      "notAuthenticated": "Tu sesión expiró. Vuelve a iniciar sesión.",
+      "generic": "Algo salió mal. Intenta de nuevo."
+    },
+    "alreadySubmitted": {
+      "title": "Ya enviaste tu evaluación ✅",
+      "body": "Aquí está lo que enviaste el {date}.",
+      "backToDashboard": "Volver al inicio"
+    },
+    "thanks": {
+      "title": "¡Gracias! 💚",
+      "body": "Gracias por compartir tu trabajo final.",
+      "backToDashboard": "Volver al inicio"
+    }
+  },
+  "admin": {
+    "title": "Evaluaciones enviadas",
+    "subtitle": "{count, plural, =0 {Sin envíos todavía} =1 {1 envío} other {# envíos}}",
+    "empty": "No hay envíos todavía.",
+    "fields": {
+      "businessGoal": "Meta de marketing",
+      "promptV1": "Primer prompt",
+      "aiOutput": "Respuesta de la IA",
+      "promptV2": "Prompt revisado",
+      "whatChanged": "Qué cambió y por qué",
+      "whyChanged": "Cómo evalúa el resultado"
     }
   }
 }
