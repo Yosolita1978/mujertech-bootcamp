@@ -551,7 +551,7 @@ ${t('step9.examplePrompt')}`;
                   onClick={() => handleQuizSubmit('step8.q1')}
                   type="button"
                 >
-                  Comprobar
+                  {t('checkButton')}
                 </button>
               )}
               {quizSubmitted['step8.q1'] && (
@@ -601,7 +601,7 @@ ${t('step9.examplePrompt')}`;
                   onClick={() => handleQuizSubmit('step8.q2')}
                   type="button"
                 >
-                  Comprobar
+                  {t('checkButton')}
                 </button>
               )}
               {quizSubmitted['step8.q2'] && (
@@ -651,7 +651,7 @@ ${t('step9.examplePrompt')}`;
                   onClick={() => handleQuizSubmit('step8.q3')}
                   type="button"
                 >
-                  Comprobar
+                  {t('checkButton')}
                 </button>
               )}
               {quizSubmitted['step8.q3'] && (

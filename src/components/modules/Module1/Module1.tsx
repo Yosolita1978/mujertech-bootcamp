@@ -64,7 +64,7 @@ export default function Module1({
       trackEvent('whatsapp_share', { module: 'module1' });
     }
     const message = encodeURIComponent(
-      `💬 Pregunta del taller MujerTech:\n\n${t('ethics.shareText')}\n\n¿Qué opinan ustedes?`
+      `${t('ethics.shareIntro')}\n\n${t('ethics.shareText')}\n\n${t('ethics.shareOutro')}`
     );
     window.open(`https://wa.me/?text=${message}`, '_blank');
     showNotification(tNotifications('shareSuccess'), 'success');

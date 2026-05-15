@@ -54,3 +54,8 @@ Desktop.ini
 # vercel
 .vercel
 docs
+
+# working notes / audit reports (not deliverables)
+TODO.md
+module3-outline.md
+values-audit.md

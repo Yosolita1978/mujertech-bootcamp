@@ -124,8 +124,8 @@
     },
     "completion": "Ahora entiendes qué es la IA y cómo puede ayudarte en tu negocio.",
     "explanation": {
-      "title": "La IA es como una asistente muy inteligente",
-      "text": "Imagina que tienes una asistente que:",
+      "title": "La IA es una herramienta muy versátil",
+      "text": "Imagina una herramienta que:",
       "item1": "📚 Leyó millones de libros",
       "item2": "🖼️ Vio millones de imágenes",
       "item3": "💬 Aprendió a escribir muy bien",
@@ -133,9 +133,9 @@
     },
     "canDo": {
       "title": "Lo que SÍ puede hacer la IA",
-      "item1": "Escribir textos para tus redes sociales",
+      "item1": "Ayudarte a escribir un primer borrador para tus redes sociales",
       "item2": "Darte ideas para tu negocio",
-      "item3": "Crear imágenes bonitas",
+      "item3": "Generar imágenes que puedas usar como punto de partida",
       "item4": "Ayudarte a escribir mensajes"
     },
     "cannotDo": {
@@ -171,7 +171,9 @@
       "text": "La IA aprende de datos que los humanos creamos. Si esos datos tienen errores o prejuicios, la IA también los tendrá.",
       "question": "¿Cómo crees que esto podría afectar a tu negocio?",
       "shareButton": "COMPARTIR EN EL GRUPO",
-      "shareText": "¿Cómo crees que los errores de la IA podrían afectar a un negocio pequeño? 🤔"
+      "shareIntro": "💬 Pregunta del taller MujerTech:",
+      "shareText": "¿Cómo crees que los errores de la IA podrían afectar a un negocio pequeño? 🤔",
+      "shareOutro": "¿Qué opinan ustedes?"
     },
     "successCriteria": {
       "introTitle": "Al terminar este módulo podrás:",
@@ -259,11 +261,11 @@
         "option3Text": "\"Regalito perfecto para alguien especial: jabón artesanal hecho con cariño 💝 ¡Pregúntame!\""
       },
       "result": {
-        "title": "¡María ya tiene contenido para publicar!",
+        "title": "¡María ya tiene tres borradores para revisar!",
         "time": "⏱️ 5 min",
         "timeLabel": "Tiempo total",
-        "alone": "🙋‍♀️ Sola",
-        "aloneLabel": "Lo hizo ella misma",
+        "alone": "✍️ Su voz",
+        "aloneLabel": "Las decisiones son suyas",
         "options": "📝 3",
         "optionsLabel": "Opciones",
         "note": "Antes, María no sabía qué escribir. ¡Ahora tiene varias opciones para elegir!"
@@ -280,17 +282,24 @@
       "generateButton": "✨ CREAR MI MENSAJE",
       "resultLabel": "Tu mensaje para la IA:",
       "copyButton": "📋 COPIAR MI MENSAJE",
-      "nextStepHint": "💡 <strong>Siguiente paso:</strong> Copia este mensaje y pégalo en ChatGPT o Claude para ver qué te responde la IA.",
+      "nextStepHint": "💡 <strong>Siguiente paso:</strong> Copia este mensaje y pégalo en ChatGPT o Claude. Después, revisa la respuesta con tu propio criterio antes de usarla.",
       "needs": {
         "social": "Ideas para redes sociales",
+        "socialText": "3 ideas de publicaciones para mis redes sociales",
         "message": "Un mensaje para clientes",
-        "names": "Nombres para un producto"
+        "messageText": "un mensaje para enviar a mis clientes",
+        "names": "Nombres para un producto",
+        "namesText": "5 nombres creativos para un nuevo producto"
       },
       "tones": {
         "friendly": "Amigable",
+        "friendlyText": "amigable y cercano, como si le hablara a una amiga",
         "professional": "Profesional",
-        "fun": "Divertido"
-      }
+        "professionalText": "profesional y confiable",
+        "fun": "Divertido",
+        "funText": "divertido y alegre"
+      },
+      "promptTemplate": "Tengo un negocio de {business}.\n\nNecesito {need}.\n\nUsa un tono {tone}."
     },
     "tools": {
       "dividerTitle": "Herramientas que puedes usar HOY",
@@ -300,9 +309,9 @@
         "price": "GRATIS",
         "what": "<strong>¿Qué es?</strong> Una IA que conversa contigo y te ayuda a escribir.",
         "forWhat": "<strong>¿Para qué sirve?</strong>",
-        "use1": "✍️ Escribir textos para redes sociales",
+        "use1": "✍️ Empezar borradores para tus redes sociales",
         "use2": "💡 Darte ideas para tu negocio",
-        "use3": "📧 Redactar mensajes y correos",
+        "use3": "📧 Ayudarte a redactar un primer borrador de mensajes y correos",
         "use4": "❓ Responder preguntas",
         "howTo": "<strong>¿Cómo usarlo?</strong>",
         "step1": "Entra a <strong><link>chatgpt.com</link></strong> en tu celular",
@@ -314,9 +323,9 @@
         "price": "GRATIS (con opciones de pago)",
         "what": "<strong>¿Qué es?</strong> Una app para crear diseños e imágenes bonitas.",
         "forWhat": "<strong>¿Para qué sirve?</strong>",
-        "use1": "🖼️ Crear imágenes para redes sociales",
+        "use1": "🖼️ Generar imágenes rápidas para darte ideas de qué decir en redes sociales",
         "use2": "📋 Hacer menús y catálogos",
-        "use3": "🎨 Diseñar logos simples",
+        "use3": "🎨 Probar ideas e imágenes antes de pedir un diseño final",
         "use4": "✨ Generar imágenes con IA",
         "howTo": "<strong>¿Cómo usarlo?</strong>",
         "step1": "Entra a <strong><link>canva.com</link></strong> o descarga la app de tu tienda",
@@ -333,7 +342,9 @@
       "text": "Cuando le das información a la IA, esos datos pueden ser usados para entrenar nuevos modelos. Por eso es importante no compartir información sensible de tu negocio o clientes.",
       "question": "¿Qué información de tu negocio NO le darías a la IA?",
       "shareButton": "COMPARTIR EN EL GRUPO",
-      "shareText": "¿Qué información de tu negocio NO le darías a la IA? 🔒"
+      "shareIntro": "💬 Pregunta del taller MujerTech:",
+      "shareText": "¿Qué información de tu negocio NO le darías a la IA? 🔒",
+      "shareOutro": "¿Qué opinan ustedes?"
     }
   },
   "module3": {
@@ -553,6 +564,7 @@
     "stepOf": "Paso {current} de {total}",
     "nextStep": "SIGUIENTE",
     "prevStep": "ANTERIOR",
+    "checkButton": "Comprobar",
     "step0": {
       "title": "Escritura de Prompts para Mujeres Emprendedoras",
       "subtitle": "Aprende a pedirle a la IA exactamente lo que necesitas para tu negocio",
@@ -664,7 +676,7 @@
       "generateButton": "VER MI PROMPT COMPLETO",
       "resultLabel": "Tu prompt usando el método CTO:",
       "copyButton": "COPIAR MI PROMPT",
-      "hint": "Copia este prompt y pégalo en ChatGPT o Claude para ver qué te responde la IA.",
+      "hint": "Copia este prompt y pégalo en ChatGPT o Claude. Después, revisa la respuesta con tu propio criterio antes de usarla.",
       "fillAll": "Por favor completa los tres campos para generar tu prompt"
     },
     "step7": {
@@ -678,7 +690,7 @@
       "question3Text": "Tu negocio tiene su propia voz. Si la respuesta no suena como tú, cámbiala.",
       "question4Title": "¿Qué cambiaría?",
       "question4Text": "Siempre pregúntate qué mejorarías. Editar la respuesta de la IA es parte del proceso.",
-      "summary": "La IA es tu asistente, no tu jefa. Tú tienes la última palabra."
+      "summary": "La IA es tu herramienta, no tu jefa. Tú tienes la última palabra."
     },
     "step8": {
       "title": "Comprueba lo que Aprendiste",
@@ -725,7 +737,7 @@
       "tip2": "Incluye tu audiencia: ¿a quién le vendes?",
       "tip3": "Pide un tono: amigable, profesional, divertido...",
       "tip4": "Pide una cantidad: \"dame 3 ideas\" es mejor que \"dame ideas\"",
-      "tip5": "Siempre revisa: la IA es tu asistente, no tu reemplazo",
+      "tip5": "Siempre revisa: la IA es tu herramienta, no tu reemplazo",
       "exampleTitle": "Ejemplo Completo",
       "examplePrompt": "Tengo un negocio de postres saludables para oficinas.\n\nNecesito 3 textos para mi estado de WhatsApp anunciando un nuevo menú semanal.\n\nQue sean cortos, con emojis, en un tono fresco y profesional.",
       "copyButton": "COPIAR GUÍA COMPLETA",

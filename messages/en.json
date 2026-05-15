@@ -124,8 +124,8 @@
     },
     "completion": "Now you understand what AI is and how it can help your business.",
     "explanation": {
-      "title": "AI is like a very smart assistant",
-      "text": "Imagine you have an assistant who:",
+      "title": "AI is a very versatile tool",
+      "text": "Imagine a tool that:",
       "item1": "📚 Read millions of books",
       "item2": "🖼️ Saw millions of images",
       "item3": "💬 Learned to write very well",
@@ -133,9 +133,9 @@
     },
     "canDo": {
       "title": "What AI CAN do",
-      "item1": "Write texts for your social media",
+      "item1": "Help you write a first draft for your social media",
       "item2": "Give you ideas for your business",
-      "item3": "Create beautiful images",
+      "item3": "Generate images you can use as a starting point",
       "item4": "Help you write messages"
     },
     "cannotDo": {
@@ -171,7 +171,9 @@
       "text": "AI learns from data that humans created. If that data has errors or biases, the AI will have them too.",
       "question": "How do you think this could affect your business?",
       "shareButton": "SHARE IN THE GROUP",
-      "shareText": "How do you think AI errors could affect a small business? 🤔"
+      "shareIntro": "💬 MujerTech workshop question:",
+      "shareText": "How do you think AI errors could affect a small business? 🤔",
+      "shareOutro": "What do you all think?"
     },
     "successCriteria": {
       "introTitle": "By the end of this module you will be able to:",
@@ -259,11 +261,11 @@
         "option3Text": "\"Perfect little gift for someone special: handmade soap made with love 💝 Ask me!\""
       },
       "result": {
-        "title": "María now has content to post!",
+        "title": "María now has three drafts to review!",
         "time": "⏱️ 5 min",
         "timeLabel": "Total time",
-        "alone": "🙋‍♀️ Alone",
-        "aloneLabel": "She did it herself",
+        "alone": "✍️ Her voice",
+        "aloneLabel": "The decisions are hers",
         "options": "📝 3",
         "optionsLabel": "Options",
         "note": "Before, María didn't know what to write. Now she has several options to choose from!"
@@ -280,17 +282,24 @@
       "generateButton": "✨ CREATE MY MESSAGE",
       "resultLabel": "Your message for AI:",
       "copyButton": "📋 COPY MY MESSAGE",
-      "nextStepHint": "💡 <strong>Next step:</strong> Copy this message and paste it in ChatGPT or Claude to see what AI responds.",
+      "nextStepHint": "💡 <strong>Next step:</strong> Copy this message and paste it in ChatGPT or Claude. Then review the response with your own judgment before using it.",
       "needs": {
         "social": "Ideas for social media",
+        "socialText": "3 social media post ideas",
         "message": "A message for clients",
-        "names": "Names for a product"
+        "messageText": "a message to send to my customers",
+        "names": "Names for a product",
+        "namesText": "5 creative names for a new product"
       },
       "tones": {
         "friendly": "Friendly",
+        "friendlyText": "friendly and warm, as if talking to a friend",
         "professional": "Professional",
-        "fun": "Fun"
-      }
+        "professionalText": "professional and trustworthy",
+        "fun": "Fun",
+        "funText": "fun and cheerful"
+      },
+      "promptTemplate": "My business: {business}.\n\nI need {need}.\n\nThe tone should be {tone}."
     },
     "tools": {
       "dividerTitle": "Tools you can use TODAY",
@@ -300,9 +309,9 @@
         "price": "FREE",
         "what": "<strong>What is it?</strong> An AI that chats with you and helps you write.",
         "forWhat": "<strong>What is it for?</strong>",
-        "use1": "✍️ Write texts for social media",
+        "use1": "✍️ Start drafts for your social media",
         "use2": "💡 Give you ideas for your business",
-        "use3": "📧 Draft messages and emails",
+        "use3": "📧 Help you draft a first version of messages and emails",
         "use4": "❓ Answer questions",
         "howTo": "<strong>How to use it?</strong>",
         "step1": "Go to <strong><link>chatgpt.com</link></strong> on your phone",
@@ -314,9 +323,9 @@
         "price": "FREE (with paid options)",
         "what": "<strong>What is it?</strong> An app to create beautiful designs and images.",
         "forWhat": "<strong>What is it for?</strong>",
-        "use1": "🖼️ Create images for social media",
+        "use1": "🖼️ Quickly generate visuals to spark ideas for what to say on social media",
         "use2": "📋 Make menus and catalogs",
-        "use3": "🎨 Design simple logos",
+        "use3": "🎨 Explore ideas and images before commissioning a final design",
         "use4": "✨ Generate images with AI",
         "howTo": "<strong>How to use it?</strong>",
         "step1": "Go to <strong><link>canva.com</link></strong> or download the app from your store",
@@ -333,7 +342,9 @@
       "text": "When you give information to AI, that data can be used to train new models. That's why it's important not to share sensitive information about your business or clients.",
       "question": "What information about your business would you NOT give to AI?",
       "shareButton": "SHARE IN THE GROUP",
-      "shareText": "What information about your business would you NOT give to AI? 🔒"
+      "shareIntro": "💬 MujerTech workshop question:",
+      "shareText": "What information about your business would you NOT give to AI? 🔒",
+      "shareOutro": "What do you all think?"
     }
   },
   "module3": {
@@ -553,6 +564,7 @@
     "stepOf": "Step {current} of {total}",
     "nextStep": "NEXT",
     "prevStep": "PREVIOUS",
+    "checkButton": "Check",
     "step0": {
       "title": "Prompt Writing for Women Entrepreneurs",
       "subtitle": "Learn to ask AI exactly what you need for your business",
@@ -664,7 +676,7 @@
       "generateButton": "SEE MY COMPLETE PROMPT",
       "resultLabel": "Your prompt using the CTO method:",
       "copyButton": "COPY MY PROMPT",
-      "hint": "Copy this prompt and paste it in ChatGPT or Claude to see what AI responds.",
+      "hint": "Copy this prompt and paste it in ChatGPT or Claude. Then review the response with your own judgment before using it.",
       "fillAll": "Please fill in all three fields to generate your prompt"
     },
     "step7": {
@@ -678,7 +690,7 @@
       "question3Text": "Your business has its own voice. If the response doesn't sound like you, change it.",
       "question4Title": "What would I change?",
       "question4Text": "Always ask yourself what you'd improve. Editing AI output is part of the process.",
-      "summary": "AI is your assistant, not your boss. You have the final word."
+      "summary": "AI is your tool, not your boss. You have the final word."
     },
     "step8": {
       "title": "Check What You Learned",
@@ -725,7 +737,7 @@
       "tip2": "Include your audience: who do you sell to?",
       "tip3": "Request a tone: friendly, professional, fun...",
       "tip4": "Request a quantity: \"give me 3 ideas\" is better than \"give me ideas\"",
-      "tip5": "Always review: AI is your assistant, not your replacement",
+      "tip5": "Always review: AI is your tool, not your replacement",
       "exampleTitle": "Complete Example",
       "examplePrompt": "I have a healthy desserts business for offices.\n\nI need 3 texts for my WhatsApp status announcing a new weekly menu.\n\nKeep them short, with emojis, in a fresh and professional tone.",
       "copyButton": "COPY COMPLETE GUIDE",

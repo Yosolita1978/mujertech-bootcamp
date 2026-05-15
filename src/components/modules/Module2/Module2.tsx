@@ -47,16 +47,16 @@ export default function Module2({
     { id: 'divertido', icon: '🎉', label: t('yourTurn.tones.fun') },
   ];
 
-  const NEED_TEXTS: Record<NeedId, string> = {
-    social: '3 ideas de publicaciones para mis redes sociales',
-    mensaje: 'un mensaje para enviar a mis clientes',
-    nombre: '5 nombres creativos para un nuevo producto',
+  const NEED_TEXT_KEYS: Record<NeedId, 'socialText' | 'messageText' | 'namesText'> = {
+    social: 'socialText',
+    mensaje: 'messageText',
+    nombre: 'namesText',
   };
 
-  const TONE_TEXTS: Record<ToneId, string> = {
-    amigable: 'amigable y cercano, como si le hablara a una amiga',
-    profesional: 'profesional y confiable',
-    divertido: 'divertido y alegre',
+  const TONE_TEXT_KEYS: Record<ToneId, 'friendlyText' | 'professionalText' | 'funText'> = {
+    amigable: 'friendlyText',
+    profesional: 'professionalText',
+    divertido: 'funText',
   };
 
   const MODULE_OUTCOMES = [t('outcomes.item1'), t('outcomes.item2')];
@@ -93,11 +93,11 @@ export default function Module2({
       return;
     }
 
-    const prompt = `Tengo un negocio de ${business.trim()}.
-
-Necesito ${NEED_TEXTS[selectedNeed]}.
-
-Usa un tono ${TONE_TEXTS[selectedTone]}.`;
+    const prompt = t('yourTurn.promptTemplate', {
+      business: business.trim(),
+      need: t(`yourTurn.needs.${NEED_TEXT_KEYS[selectedNeed]}`),
+      tone: t(`yourTurn.tones.${TONE_TEXT_KEYS[selectedTone]}`),
+    });
 
     setGeneratedPrompt(prompt);
     setShowGenerated(true);
@@ -117,7 +117,7 @@ Usa un tono ${TONE_TEXTS[selectedTone]}.`;
       trackEvent('whatsapp_share', { module: 'module2' });
     }
     const message = encodeURIComponent(
-      `💬 Pregunta del taller MujerTech:\n\n${t('ethics.shareText')}\n\n¿Qué opinan ustedes?`
+      `${t('ethics.shareIntro')}\n\n${t('ethics.shareText')}\n\n${t('ethics.shareOutro')}`
     );
     window.open(`https://wa.me/?text=${message}`, '_blank');
     showNotification(tNotifications('shareSuccess'), 'success');
@@ -451,12 +451,14 @@ Usa un tono ${TONE_TEXTS[selectedTone]}.`;
         <p dangerouslySetInnerHTML={rawHtml(t.raw('tools.chatgpt.howTo'))} />
         <ol className={styles.toolSteps}>
           <li>
-            Entra a{' '}
-            <strong>
-              <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
-                chatgpt.com
-              </a>
-            </strong>
+            {t.rich('tools.chatgpt.step1', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+              link: (chunks) => (
+                <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>{t('tools.chatgpt.step2')}</li>
           <li>{t('tools.chatgpt.step3')}</li>
@@ -483,12 +485,14 @@ Usa un tono ${TONE_TEXTS[selectedTone]}.`;
         <p dangerouslySetInnerHTML={rawHtml(t.raw('tools.canva.howTo'))} />
         <ol className={styles.toolSteps}>
           <li>
-            Entra a{' '}
-            <strong>
-              <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">
-                canva.com
-              </a>
-            </strong>
+            {t.rich('tools.canva.step1', {
+              strong: (chunks) => <strong>{chunks}</strong>,
+              link: (chunks) => (
+                <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>{t('tools.canva.step2')}</li>
           <li>{t('tools.canva.step3')}</li>

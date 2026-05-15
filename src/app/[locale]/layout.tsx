@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale, getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, isValidLocale } from '@/i18n/routing';
+import StructuredData from '@/components/StructuredData/StructuredData';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body>
+        <StructuredData />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
