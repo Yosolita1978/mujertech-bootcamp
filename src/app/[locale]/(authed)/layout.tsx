@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
 import AuthedShell from '@/components/AuthedShell/AuthedShell';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { isAdminEmail } from '@/lib/admin';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -22,5 +23,11 @@ export default async function AuthedLayout({ params, children }: Props) {
     redirect(`/${locale}/login`);
   }
 
-  return <AuthedShell userEmail={user.email}>{children}</AuthedShell>;
+  const isAdmin = isAdminEmail(user.email);
+
+  return (
+    <AuthedShell userEmail={user.email} isAdmin={isAdmin}>
+      {children}
+    </AuthedShell>
+  );
 }

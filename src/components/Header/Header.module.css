@@ -54,6 +54,7 @@
 }
 
 .glossaryBtn,
+.adminBtn,
 .signOutBtn {
     display: inline-flex;
     align-items: center;
@@ -78,6 +79,7 @@
 }
 
 .glossaryBtn:active,
+.adminBtn:active,
 .signOutBtn:active {
     background: var(--border);
     transform: scale(0.97);
@@ -101,6 +103,7 @@
     }
 
     .glossaryBtn,
+    .adminBtn,
     .signOutBtn {
         padding: var(--spacing-2xs) var(--spacing-sm);
         font-size: 0.7rem;
@@ -109,6 +112,7 @@
 
 @media (min-width: 1024px) {
     .glossaryBtn:hover,
+    .adminBtn:hover,
     .signOutBtn:hover {
         background: var(--primary-light);
         border-color: var(--primary);

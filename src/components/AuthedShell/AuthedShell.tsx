@@ -10,16 +10,21 @@ import styles from './AuthedShell.module.css';
 
 type Props = {
   userEmail: string;
+  isAdmin: boolean;
   children: ReactNode;
 };
 
-export default function AuthedShell({ userEmail, children }: Props) {
+export default function AuthedShell({ userEmail, isAdmin, children }: Props) {
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const { notification, showNotification, hideNotification } = useNotification();
 
   return (
     <NotificationProvider value={showNotification}>
-      <Header userEmail={userEmail} onGlossaryOpen={() => setGlossaryOpen(true)} />
+      <Header
+        userEmail={userEmail}
+        isAdmin={isAdmin}
+        onGlossaryOpen={() => setGlossaryOpen(true)}
+      />
       <main className={styles.main}>{children}</main>
       <Glossary isOpen={glossaryOpen} onClose={() => setGlossaryOpen(false)} />
       <Notification

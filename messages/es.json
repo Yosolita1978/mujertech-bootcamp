@@ -12,7 +12,8 @@
   },
   "header": {
     "title": "MujerTech",
-    "help": "Ayuda"
+    "help": "Ayuda",
+    "admin": "Admin"
   },
   "nav": {
     "welcome": "Inicio",

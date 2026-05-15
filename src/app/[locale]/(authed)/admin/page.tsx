@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
+import { isAdminEmail } from '@/lib/admin';
 import styles from './page.module.css';
 
 type Props = {
@@ -16,14 +17,6 @@ const FIELDS = [
   { key: 'whatChanged', column: 'what_changed' },
   { key: 'whyChanged', column: 'why_changed' },
 ] as const;
-
-function parseAdminEmails(raw: string | undefined): string[] {
-  if (!raw) return [];
-  return raw
-    .split(',')
-    .map((e) => e.trim().toLowerCase())
-    .filter((e) => e.length > 0);
-}
 
 export default async function AdminPage({ params }: Props) {
   const { locale } = await params;
@@ -40,8 +33,7 @@ export default async function AdminPage({ params }: Props) {
     redirect(`/${locale}/login`);
   }
 
-  const adminEmails = parseAdminEmails(process.env.ADMIN_EMAILS);
-  if (!adminEmails.includes(user.email.toLowerCase())) {
+  if (!isAdminEmail(user.email)) {
     redirect(`/${locale}`);
   }
 
