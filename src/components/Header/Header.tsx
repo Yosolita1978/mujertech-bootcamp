@@ -20,7 +20,7 @@ export default function Header({ onGlossaryOpen, userEmail, isAdmin }: Props) {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo} aria-label={t('title')}>
           <Image
             src="/images/logomujertech1.png"
             alt="MujerTech Logo"
@@ -30,7 +30,7 @@ export default function Header({ onGlossaryOpen, userEmail, isAdmin }: Props) {
             priority
           />
           <span className={styles.brandText}>{t('title')}</span>
-        </div>
+        </Link>
         <div className={styles.headerRight}>
           <LanguageSwitcher />
           <button
