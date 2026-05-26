@@ -1,4 +1,6 @@
+import { redirect } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
 import LoginForm from './LoginForm';
 import styles from './page.module.css';
 
@@ -10,6 +12,15 @@ type Props = {
 export default async function LoginPage({ params, searchParams }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  // Already signed in? Send them to the dashboard instead of showing the form.
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (user) {
+    redirect(`/${locale}`);
+  }
 
   const sp = await searchParams;
   const errorParam = typeof sp.error === 'string' ? sp.error : null;

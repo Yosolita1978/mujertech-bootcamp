@@ -1,12 +1,12 @@
-/* Mobile-first. Header height is coupled to AuthedShell.module.css —
-   keep the breakpoints in sync. */
+/* Mobile-first. Header height is fixed at 100px across all breakpoints —
+   keep AuthedShell.module.css margin-top in sync. */
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 64px;
+    height: 100px;
     background: rgba(255, 252, 249, 0.85);
     backdrop-filter: saturate(180%) blur(16px);
     -webkit-backdrop-filter: saturate(180%) blur(16px);
@@ -51,7 +51,7 @@
 
 .logoImage {
     width: auto;
-    height: 40px;
+    height: 80px;
     object-fit: contain;
 }
 
@@ -106,12 +106,11 @@
 
 @media (min-width: 640px) {
     .header {
-        height: 80px;
         padding: 0 var(--spacing-md);
     }
 
     .logoImage {
-        height: 56px;
+        height: 72px;
     }
 
     .brandText,
@@ -133,14 +132,6 @@
 }
 
 @media (min-width: 1024px) {
-    .header {
-        height: 100px;
-    }
-
-    .logoImage {
-        height: 72px;
-    }
-
     .glossaryBtn:hover,
     .adminBtn:hover,
     .signOutBtn:hover {
