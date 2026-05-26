@@ -1,6 +1,21 @@
 .main {
-  /* Header is position: fixed at 100px tall — keep content clear of it. */
-  margin-top: 100px;
+  /* Header is position: fixed — keep content clear of it.
+     Heights mirror Header.module.css breakpoints. */
+  margin-top: 64px;
   padding-bottom: var(--spacing-3xl);
-  min-height: calc(100dvh - 100px);
+  min-height: calc(100dvh - 64px);
+}
+
+@media (min-width: 640px) {
+  .main {
+    margin-top: 80px;
+    min-height: calc(100dvh - 80px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin-top: 100px;
+    min-height: calc(100dvh - 100px);
+  }
 }

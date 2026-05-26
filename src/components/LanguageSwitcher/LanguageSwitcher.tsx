@@ -25,7 +25,6 @@ export default function LanguageSwitcher() {
       >
         ES
       </button>
-      <span className={styles.divider}>|</span>
       <button
         className={`${styles.langBtn} ${locale === 'en' ? styles.active : ''}`}
         onClick={() => switchLocale('en')}

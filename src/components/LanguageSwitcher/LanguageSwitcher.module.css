@@ -1,24 +1,29 @@
 .switcher {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: stretch;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    padding: 2px;
     gap: 2px;
 }
 
 .langBtn {
     background: transparent;
     border: none;
-    color: var(--gray);
-    font-size: var(--text-xs);
-    font-weight: 600;
-    padding: var(--spacing-2xs) var(--spacing-sm);
+    color: var(--gray-strong);
+    font-size: var(--text-2xs);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0 var(--spacing-sm);
     border-radius: var(--radius-full);
     cursor: pointer;
     transition:
         color var(--duration-fast) var(--ease-out),
         background var(--duration-fast) var(--ease-out);
-    min-height: 38px;
-    min-width: 38px;
-    display: flex;
+    min-height: 28px;
+    min-width: 34px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     -webkit-user-select: none;
@@ -26,24 +31,25 @@
 }
 
 .langBtn:active {
-    color: var(--primary-darker);
-    background: var(--primary-light);
+    transform: scale(0.97);
 }
 
 .langBtn.active {
-    color: var(--primary-darker);
-    background: var(--primary-light);
+    background: var(--primary);
+    color: white;
 }
 
-.divider {
-    color: var(--border-strong);
-    font-size: var(--text-xs);
-    -webkit-user-select: none;
-    user-select: none;
+@media (min-width: 640px) {
+    .langBtn {
+        min-height: 32px;
+        min-width: 38px;
+        font-size: var(--text-xs);
+        padding: 0 var(--spacing-md);
+    }
 }
 
 @media (min-width: 1024px) {
-    .langBtn:hover {
+    .langBtn:not(.active):hover {
         color: var(--primary-darker);
         background: var(--primary-light);
     }

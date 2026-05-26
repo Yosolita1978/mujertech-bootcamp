@@ -29,7 +29,7 @@ export default function Header({ onGlossaryOpen, userEmail, isAdmin }: Props) {
             className={styles.logoImage}
             priority
           />
-          <span>{t('title')}</span>
+          <span className={styles.brandText}>{t('title')}</span>
         </div>
         <div className={styles.headerRight}>
           <LanguageSwitcher />
@@ -37,14 +37,19 @@ export default function Header({ onGlossaryOpen, userEmail, isAdmin }: Props) {
             className={styles.glossaryBtn}
             onClick={onGlossaryOpen}
             type="button"
+            aria-label={t('help')}
           >
             <span className={styles.glossaryIcon}>📖</span>
-            <span>{t('help')}</span>
+            <span className={styles.btnLabel}>{t('help')}</span>
           </button>
           {isAdmin && (
-            <Link href="/admin" className={styles.adminBtn}>
+            <Link
+              href="/admin"
+              className={styles.adminBtn}
+              aria-label={t('admin')}
+            >
               <span className={styles.glossaryIcon}>⚙️</span>
-              <span>{t('admin')}</span>
+              <span className={styles.btnLabel}>{t('admin')}</span>
             </Link>
           )}
           {userEmail && (
