@@ -773,7 +773,7 @@
       "submit": "Send link",
       "submitting": "Sending...",
       "checkEmailTitle": "Check your email 📬",
-      "checkEmailBody": "We sent a link to {email}. Open it on this device to sign in.",
+      "checkEmailBody": "We sent a link to {email}. Open it on any device to sign in.",
       "errors": {
         "invalidEmail": "Invalid email. Please check the address.",
         "rateLimited": "Too many attempts. Please wait a few minutes.",

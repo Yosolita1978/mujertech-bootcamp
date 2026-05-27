@@ -773,7 +773,7 @@
       "submit": "Enviar enlace",
       "submitting": "Enviando...",
       "checkEmailTitle": "Revisa tu correo 📬",
-      "checkEmailBody": "Te enviamos un enlace a {email}. Ábrelo en este dispositivo para iniciar sesión.",
+      "checkEmailBody": "Te enviamos un enlace a {email}. Ábrelo desde cualquier dispositivo para iniciar sesión.",
       "errors": {
         "invalidEmail": "Correo no válido. Revisa la dirección.",
         "rateLimited": "Demasiados intentos. Espera unos minutos.",
