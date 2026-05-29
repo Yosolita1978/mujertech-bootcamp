@@ -130,6 +130,60 @@
   font-size: var(--text-md);
 }
 
+.optionsList {
+  margin: var(--spacing-md) 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.optionItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xs);
+}
+
+.optionItem > strong {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: var(--text-base);
+}
+
+.helperText {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--gray-strong);
+  line-height: var(--leading-snug);
+}
+
+.codeInput {
+  font-size: var(--text-xl);
+  letter-spacing: 0.4em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  padding-right: 0.5rem;
+}
+
+.linkButton {
+  margin-top: var(--spacing-md);
+  padding: 0.5rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--primary);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  min-height: var(--touch-min);
+  align-self: center;
+}
+
+.linkButton:active {
+  opacity: 0.7;
+}
+
 @media (min-width: 640px) {
   .card {
     padding: var(--spacing-2xl) var(--spacing-xl);

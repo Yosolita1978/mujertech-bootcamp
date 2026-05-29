@@ -767,15 +767,24 @@
   "auth": {
     "login": {
       "title": "Sign in",
-      "subtitle": "We'll email you a magic link.",
+      "subtitle": "We'll email you a link and a 6-digit code.",
       "emailLabel": "Email",
       "emailPlaceholder": "you@example.com",
       "submit": "Send link",
       "submitting": "Sending...",
+      "verifyCode": "Verify code",
+      "verifyingCode": "Verifying...",
+      "codeLabel": "6-digit code",
+      "codePlaceholder": "123456",
+      "changeEmail": "Use a different email",
       "checkEmailTitle": "Check your email 📬",
-      "checkEmailBody": "We sent a link to {email}. Open it on any device to sign in.",
+      "checkEmailIntro": "We sent an email to {email}. You have two ways to sign in:",
+      "checkEmailOption1Title": "1. Tap the link in the email",
+      "checkEmailOption1Body": "A new browser tab may open — that's normal.",
+      "checkEmailOption2Title": "2. Or type the code from the email here",
       "errors": {
         "invalidEmail": "Invalid email. Please check the address.",
+        "invalidCode": "Wrong or expired code. Please check the email.",
         "rateLimited": "Too many attempts. Please wait a few minutes.",
         "generic": "Something went wrong. Please try again."
       }
@@ -783,6 +792,7 @@
     "callback": {
       "errorTitle": "We couldn't sign you in",
       "errorBody": "The link may have expired or already been used. Request a new one.",
+      "errorBodyWithEmail": "This link no longer works. Send a new one to {email}, or type the 6-digit code from the email.",
       "retry": "Back to sign in"
     },
     "signOut": "Sign out"

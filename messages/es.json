@@ -767,15 +767,24 @@
   "auth": {
     "login": {
       "title": "Inicia sesión",
-      "subtitle": "Te enviaremos un enlace mágico a tu correo.",
+      "subtitle": "Te enviaremos un enlace y un código a tu correo.",
       "emailLabel": "Correo electrónico",
       "emailPlaceholder": "tu@correo.com",
       "submit": "Enviar enlace",
       "submitting": "Enviando...",
+      "verifyCode": "Verificar código",
+      "verifyingCode": "Verificando...",
+      "codeLabel": "Código de 6 dígitos",
+      "codePlaceholder": "123456",
+      "changeEmail": "Usar otro correo",
       "checkEmailTitle": "Revisa tu correo 📬",
-      "checkEmailBody": "Te enviamos un enlace a {email}. Ábrelo desde cualquier dispositivo para iniciar sesión.",
+      "checkEmailIntro": "Te enviamos un correo a {email}. Tienes dos formas de entrar:",
+      "checkEmailOption1Title": "1. Toca el enlace en el correo",
+      "checkEmailOption1Body": "Puede que se abra una ventana nueva del navegador. Eso es normal.",
+      "checkEmailOption2Title": "2. O escribe aquí el código del correo",
       "errors": {
         "invalidEmail": "Correo no válido. Revisa la dirección.",
+        "invalidCode": "Código incorrecto o caducado. Revisa el correo.",
         "rateLimited": "Demasiados intentos. Espera unos minutos.",
         "generic": "Algo salió mal. Intenta de nuevo."
       }
@@ -783,6 +792,7 @@
     "callback": {
       "errorTitle": "No pudimos iniciar tu sesión",
       "errorBody": "El enlace puede haber caducado o ya se usó. Solicita uno nuevo.",
+      "errorBodyWithEmail": "El enlace ya no es válido. Pide uno nuevo para {email}, o usa el código de 6 dígitos que llega en el correo.",
       "retry": "Volver al inicio de sesión"
     },
     "signOut": "Cerrar sesión"
