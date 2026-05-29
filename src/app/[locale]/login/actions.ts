@@ -1,12 +1,8 @@
 'use server';
 
-import { cookies, headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
-
-const EMAIL_COOKIE = 'last_login_email';
-const EMAIL_COOKIE_MAX_AGE = 60 * 30; // 30 minutes — survives email scan + user reading
 
 export type LoginState =
   | { status: 'idle' }
@@ -26,21 +22,8 @@ export async function signInWithEmailAction(
   }
   const email = emailRaw.trim();
 
-  const headersList = await headers();
-  const host = headersList.get('host');
-  const proto = headersList.get('x-forwarded-proto') ?? 'http';
-  if (!host) {
-    return { status: 'error', message: t('generic') };
-  }
-  const origin = `${proto}://${host}`;
-
   const supabase = await createSupabaseServerClient();
-  const { error } = await supabase.auth.signInWithOtp({
-    email,
-    options: {
-      emailRedirectTo: `${origin}/${locale}/auth/callback`,
-    },
-  });
+  const { error } = await supabase.auth.signInWithOtp({ email });
 
   if (error) {
     if (error.status === 429) {
@@ -51,17 +34,6 @@ export async function signInWithEmailAction(
     }
     return { status: 'error', email, message: t('generic') };
   }
-
-  // Persist the email so /login can pre-fill it if the magic link later fails
-  // (e.g., Gmail's link scanner consumed the token before the user clicked).
-  const cookieStore = await cookies();
-  cookieStore.set(EMAIL_COOKIE, email, {
-    httpOnly: true,
-    sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
-    path: '/',
-    maxAge: EMAIL_COOKIE_MAX_AGE,
-  });
 
   return { status: 'codeSent', email };
 }
@@ -81,11 +53,11 @@ export async function verifyOtpCodeAction(
   }
   const email = emailRaw.trim();
 
-  if (typeof codeRaw !== 'string') {
-    return { status: 'error', email, message: t('invalidCode') };
-  }
-  const code = codeRaw.replace(/\D/g, '');
-  if (code.length !== 6) {
+  // Accept the code at whatever length Supabase sends it (6–10 digits).
+  // Strip anything that isn't a digit so spaces/dashes pasted from the email
+  // don't trip up verification.
+  const code = typeof codeRaw === 'string' ? codeRaw.replace(/\D/g, '') : '';
+  if (code === '') {
     return { status: 'error', email, message: t('invalidCode') };
   }
 
@@ -102,9 +74,6 @@ export async function verifyOtpCodeAction(
     }
     return { status: 'error', email, message: t('invalidCode') };
   }
-
-  const cookieStore = await cookies();
-  cookieStore.delete(EMAIL_COOKIE);
 
   redirect(`/${locale}`);
 }

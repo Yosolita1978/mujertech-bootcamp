@@ -767,33 +767,24 @@
   "auth": {
     "login": {
       "title": "Sign in",
-      "subtitle": "We'll email you a link and a 6-digit code.",
+      "subtitle": "We'll email you a code to sign in.",
       "emailLabel": "Email",
       "emailPlaceholder": "you@example.com",
-      "submit": "Send link",
+      "submit": "Send code",
       "submitting": "Sending...",
-      "verifyCode": "Verify code",
-      "verifyingCode": "Verifying...",
-      "codeLabel": "6-digit code",
-      "codePlaceholder": "123456",
+      "verifyCode": "Sign in",
+      "verifyingCode": "Signing in...",
+      "codeLabel": "Code from the email",
+      "codePlaceholder": "Type the code",
       "changeEmail": "Use a different email",
       "checkEmailTitle": "Check your email 📬",
-      "checkEmailIntro": "We sent an email to {email}. You have two ways to sign in:",
-      "checkEmailOption1Title": "1. Tap the link in the email",
-      "checkEmailOption1Body": "A new browser tab may open — that's normal.",
-      "checkEmailOption2Title": "2. Or type the code from the email here",
+      "checkEmailIntro": "We sent a code to {email}. Type it below to sign in.",
       "errors": {
         "invalidEmail": "Invalid email. Please check the address.",
         "invalidCode": "Wrong or expired code. Please check the email.",
         "rateLimited": "Too many attempts. Please wait a few minutes.",
         "generic": "Something went wrong. Please try again."
       }
-    },
-    "callback": {
-      "errorTitle": "We couldn't sign you in",
-      "errorBody": "The link may have expired or already been used. Request a new one.",
-      "errorBodyWithEmail": "This link no longer works. Send a new one to {email}, or type the 6-digit code from the email.",
-      "retry": "Back to sign in"
     },
     "signOut": "Sign out"
   },

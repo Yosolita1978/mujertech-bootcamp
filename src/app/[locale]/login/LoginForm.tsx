@@ -10,10 +10,6 @@ import {
 } from './actions';
 import styles from './page.module.css';
 
-type Props = {
-  defaultEmail?: string;
-};
-
 const initialState: LoginState = { status: 'idle' };
 
 function EmailSubmitButton() {
@@ -36,7 +32,7 @@ function CodeSubmitButton() {
   );
 }
 
-export default function LoginForm({ defaultEmail = '' }: Props) {
+export default function LoginForm() {
   const t = useTranslations('auth.login');
 
   const [emailState, emailAction] = useActionState<LoginState, FormData>(
@@ -63,39 +59,30 @@ export default function LoginForm({ defaultEmail = '' }: Props) {
         <p className={styles.calloutTitle}>{t('checkEmailTitle')}</p>
         <p>{t('checkEmailIntro', { email })}</p>
 
-        <ol className={styles.optionsList}>
-          <li className={styles.optionItem}>
-            <strong>{t('checkEmailOption1Title')}</strong>
-            <p className={styles.helperText}>{t('checkEmailOption1Body')}</p>
-          </li>
-          <li className={styles.optionItem}>
-            <strong>{t('checkEmailOption2Title')}</strong>
-            <form action={codeAction} className={styles.form} noValidate>
-              <input type="hidden" name="email" value={email} />
-              <label htmlFor="code" className={styles.label}>
-                {t('codeLabel')}
-              </label>
-              <input
-                id="code"
-                name="code"
-                type="text"
-                required
-                inputMode="numeric"
-                pattern="[0-9]{6}"
-                maxLength={6}
-                autoComplete="one-time-code"
-                placeholder={t('codePlaceholder')}
-                className={`${styles.input} ${styles.codeInput}`}
-              />
-              {codeState.status === 'error' && (
-                <p className={styles.errorText} role="alert">
-                  {codeState.message}
-                </p>
-              )}
-              <CodeSubmitButton />
-            </form>
-          </li>
-        </ol>
+        <form action={codeAction} className={styles.form} noValidate>
+          <input type="hidden" name="email" value={email} />
+          <label htmlFor="code" className={styles.label}>
+            {t('codeLabel')}
+          </label>
+          <input
+            id="code"
+            name="code"
+            type="text"
+            required
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={10}
+            autoComplete="one-time-code"
+            placeholder={t('codePlaceholder')}
+            className={`${styles.input} ${styles.codeInput}`}
+          />
+          {codeState.status === 'error' && (
+            <p className={styles.errorText} role="alert">
+              {codeState.message}
+            </p>
+          )}
+          <CodeSubmitButton />
+        </form>
 
         <button
           type="button"
@@ -109,11 +96,8 @@ export default function LoginForm({ defaultEmail = '' }: Props) {
   }
 
   const fieldError = emailState.status === 'error' ? emailState.message : null;
-  const lastAttemptedEmail =
-    (emailState.status === 'error' && emailState.email) ||
-    (emailState.status === 'codeSent' && emailState.email) ||
-    '';
-  const initialEmail = lastAttemptedEmail || defaultEmail;
+  const initialEmail =
+    (emailState.status === 'error' && emailState.email) || '';
 
   return (
     <form action={emailAction} className={styles.form} noValidate>
