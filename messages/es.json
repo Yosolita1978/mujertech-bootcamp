@@ -99,7 +99,7 @@
       "algo": "Genial, vas a aprender trucos para mejorar tus resultados.",
       "mucho": "¡Excelente! Descubrirás nuevas formas de usar la IA."
     },
-    "shareSuccess": "¡Gracias por compartir! 💚",
+    "joinGroup": "¡Abriendo nuestra comunidad en WhatsApp! 💚",
     "copied": "¡Copiado! 📋",
     "copyFailed": "No se pudo copiar. Selecciona el texto manualmente.",
     "promptReady": "¡Tu mensaje está listo! 🎉",
@@ -171,10 +171,7 @@
       "title": "Momento de reflexión",
       "text": "La IA aprende de datos que los humanos creamos. Si esos datos tienen errores o prejuicios, la IA también los tendrá.",
       "question": "¿Cómo crees que esto podría afectar a tu negocio?",
-      "shareButton": "COMPARTIR EN EL GRUPO",
-      "shareIntro": "💬 Pregunta del taller MujerTech:",
-      "shareText": "¿Cómo crees que los errores de la IA podrían afectar a un negocio pequeño? 🤔",
-      "shareOutro": "¿Qué opinan ustedes?"
+      "shareButton": "UNIRSE AL GRUPO"
     },
     "successCriteria": {
       "introTitle": "Al terminar este módulo podrás:",
@@ -342,10 +339,7 @@
       "title": "Momento de reflexión",
       "text": "Cuando le das información a la IA, esos datos pueden ser usados para entrenar nuevos modelos. Por eso es importante no compartir información sensible de tu negocio o clientes.",
       "question": "¿Qué información de tu negocio NO le darías a la IA?",
-      "shareButton": "COMPARTIR EN EL GRUPO",
-      "shareIntro": "💬 Pregunta del taller MujerTech:",
-      "shareText": "¿Qué información de tu negocio NO le darías a la IA? 🔒",
-      "shareOutro": "¿Qué opinan ustedes?"
+      "shareButton": "UNIRSE AL GRUPO"
     }
   },
   "module3": {
@@ -539,8 +533,7 @@
       "title": "Momento de reflexión",
       "text": "No todo en marketing pasa por la IA. Hay momentos en que escribir tú misma — sin ayuda — comunica algo que ninguna IA puede: tu presencia real, tu historia, tu cariño por tus clientas. Un mensaje de condolencias a una clienta fiel, una respuesta personal a una queja, un agradecimiento sincero después de una venta importante. Esos los escribes tú.",
       "question": "¿En qué momento de tu negocio NO usarías la IA, aunque te ahorre tiempo?",
-      "shareButton": "COMPARTIR EN EL GRUPO",
-      "shareText": "¿En qué momento de tu negocio NO usarías la IA para marketing, aunque te ahorre tiempo? 🤔"
+      "shareButton": "UNIRSE AL GRUPO"
     },
     "culminating": {
       "title": "Tu pieza de marketing lista para hoy",

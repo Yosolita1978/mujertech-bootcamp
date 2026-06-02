@@ -69,6 +69,7 @@ const ISSUE_IDS: readonly IssueId[] = [
 
 const CHATGPT_URL = 'https://chatgpt.com/';
 const WHATSAPP_URL = 'https://wa.me/';
+const COMMUNITY_URL = 'https://chat.whatsapp.com/BeKIk6RzQ68JFnHOL1ah12';
 
 function loadPractice(): PracticeData {
   try {
@@ -310,9 +311,8 @@ export default function Module3({
     if (trackEvent) {
       trackEvent('module3_ethics_shared');
     }
-    const message = encodeURIComponent(t('ethics.shareText'));
-    window.open(`${WHATSAPP_URL}?text=${message}`, '_blank');
-    showNotification(tNotifications('shareSuccess'), 'success');
+    window.open(COMMUNITY_URL, '_blank');
+    showNotification(tNotifications('joinGroup'), 'success');
   };
 
   const handleCopyFinalText = () => {

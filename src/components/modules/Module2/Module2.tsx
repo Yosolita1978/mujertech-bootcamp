@@ -7,6 +7,8 @@ import { rawHtml } from '@/lib/i18n';
 import type { NotificationType } from '@/lib/hooks/useNotification';
 import styles from './Module2.module.css';
 
+const COMMUNITY_URL = 'https://chat.whatsapp.com/BeKIk6RzQ68JFnHOL1ah12';
+
 type NeedId = 'social' | 'mensaje' | 'nombre';
 type ToneId = 'amigable' | 'profesional' | 'divertido';
 
@@ -116,11 +118,8 @@ export default function Module2({
     if (trackEvent) {
       trackEvent('whatsapp_share', { module: 'module2' });
     }
-    const message = encodeURIComponent(
-      `${t('ethics.shareIntro')}\n\n${t('ethics.shareText')}\n\n${t('ethics.shareOutro')}`
-    );
-    window.open(`https://wa.me/?text=${message}`, '_blank');
-    showNotification(tNotifications('shareSuccess'), 'success');
+    window.open(COMMUNITY_URL, '_blank');
+    showNotification(tNotifications('joinGroup'), 'success');
   };
 
   const handleNext = () => {

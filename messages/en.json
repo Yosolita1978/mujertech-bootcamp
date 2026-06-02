@@ -99,7 +99,7 @@
       "algo": "Awesome, you'll learn tricks to improve your results.",
       "mucho": "Excellent! You'll discover new ways to use AI."
     },
-    "shareSuccess": "Thanks for sharing! 💚",
+    "joinGroup": "Opening our WhatsApp community! 💚",
     "copied": "Copied! 📋",
     "copyFailed": "Could not copy. Select the text manually.",
     "promptReady": "Your message is ready! 🎉",
@@ -171,10 +171,7 @@
       "title": "Moment of reflection",
       "text": "AI learns from data that humans created. If that data has errors or biases, the AI will have them too.",
       "question": "How do you think this could affect your business?",
-      "shareButton": "SHARE IN THE GROUP",
-      "shareIntro": "💬 MujerTech workshop question:",
-      "shareText": "How do you think AI errors could affect a small business? 🤔",
-      "shareOutro": "What do you all think?"
+      "shareButton": "JOIN THE GROUP"
     },
     "successCriteria": {
       "introTitle": "By the end of this module you will be able to:",
@@ -342,10 +339,7 @@
       "title": "Moment of reflection",
       "text": "When you give information to AI, that data can be used to train new models. That's why it's important not to share sensitive information about your business or clients.",
       "question": "What information about your business would you NOT give to AI?",
-      "shareButton": "SHARE IN THE GROUP",
-      "shareIntro": "💬 MujerTech workshop question:",
-      "shareText": "What information about your business would you NOT give to AI? 🔒",
-      "shareOutro": "What do you all think?"
+      "shareButton": "JOIN THE GROUP"
     }
   },
   "module3": {
@@ -539,8 +533,7 @@
       "title": "Moment of reflection",
       "text": "Not everything in marketing goes through AI. There are moments where writing it yourself — without help — communicates something no AI can: your real presence, your story, your care for your customers. A condolence message to a loyal customer, a personal reply to a complaint, a sincere thank-you after an important sale. Those you write yourself.",
       "question": "When in your business would you NOT use AI, even if it saves you time?",
-      "shareButton": "SHARE IN THE GROUP",
-      "shareText": "When in your business would you NOT use AI for marketing, even if it saves you time? 🤔"
+      "shareButton": "JOIN THE GROUP"
     },
     "culminating": {
       "title": "Your marketing piece, ready for today",
