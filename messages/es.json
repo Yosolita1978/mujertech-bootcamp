@@ -759,8 +759,16 @@
   },
   "auth": {
     "login": {
-      "title": "Inicia sesión",
-      "subtitle": "Te enviaremos un código a tu correo para entrar.",
+      "landing": {
+        "kicker": "MujerTech · Bootcamp de IA",
+        "headline": "Aprende a usar la inteligencia artificial para tu negocio",
+        "subhead": "Gratis, a tu ritmo y en español. Solo necesitas tu correo para empezar.",
+        "reassurance": "El curso es gratis. Te registras solo para guardar tu progreso.",
+        "modulesTitle": "Lo que vas a aprender",
+        "lockedHint": "Entra para desbloquear los módulos",
+        "bonusBadge": "Bonus",
+        "capstoneTagline": "Practica con prompts reales"
+      },
       "emailLabel": "Correo electrónico",
       "emailPlaceholder": "tu@correo.com",
       "submit": "Enviar código",

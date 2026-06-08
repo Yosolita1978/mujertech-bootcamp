@@ -759,8 +759,16 @@
   },
   "auth": {
     "login": {
-      "title": "Sign in",
-      "subtitle": "We'll email you a code to sign in.",
+      "landing": {
+        "kicker": "MujerTech · AI Bootcamp",
+        "headline": "Learn to use artificial intelligence for your business",
+        "subhead": "Free, at your own pace, in Spanish and English. All you need is your email to start.",
+        "reassurance": "The course is free. You register only to save your progress.",
+        "modulesTitle": "What you'll learn",
+        "lockedHint": "Sign in to unlock the modules",
+        "bonusBadge": "Bonus",
+        "capstoneTagline": "Practice with real prompts"
+      },
       "emailLabel": "Email",
       "emailPlaceholder": "you@example.com",
       "submit": "Send code",
